@@ -121,55 +121,15 @@ const About = () => {
                 className="mb-16"
               >
                 <h2 className="text-3xl font-bold mb-6">Our Team</h2>
-                <p className="text-gray-600 mb-8">
-                  Our diverse team combines expertise in textile engineering, electronics, software development, 
-                  artificial intelligence, and industry-specific knowledge to deliver holistic solutions.
-                </p>
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                  {[
-                    {
-                      name: "Felix von Heland",
-                      role: "CEO and Founder",
-                      bio: "Leading WRLDS Technologies with a vision to transform the future of smart textiles.",
-                      image: "/lovable-uploads/aa5291bd-2417-4c1e-9a02-0bcc71a92507.png"
-                    },
-                    {
-                      name: "Niek Bijman",
-                      role: "Software Lead",
-                      bio: "Specializing in cloud infrastructure and APIs for seamless data integration.",
-                      image: "/lovable-uploads/e502f601-c519-43a8-86f5-5fa89ae50d2f.png"
-                    },
-                    {
-                      name: "Chengjie Li",
-                      role: "Hardware Lead",
-                      bio: "Expert in embedded systems engineering, leading our hardware development efforts.",
-                      image: "/lovable-uploads/3de85ddd-15e1-4216-9697-f91abb9a47ce.png"
-                    },
-                    {
-                      name: "Love",
-                      role: "COO",
-                      bio: "Overseeing daily operations and ensuring business objectives are met effectively.",
-                      image: "/lovable-uploads/a9bb9110-964a-43b0-a5ab-7162140cd133.png"
-                    }
-                  ].map((member, i) => (
-                    <Card key={i} className="bg-gray-50 border border-gray-100 overflow-hidden">
-                      <CardContent className="p-6">
-                        <div className="flex flex-col items-center text-center">
-                          <div className="w-32 h-32 relative mb-4 rounded-full overflow-hidden">
-                            <img 
-                              src={member.image} 
-                              alt={member.name} 
-                              className="w-full h-full object-cover filter grayscale" 
-                            />
-                          </div>
-                          <h3 className="font-bold text-lg">{member.name}</h3>
-                          <p className="text-gray-500 text-sm mb-2">{member.role}</p>
-                          <p className="text-gray-600 text-sm">{member.bio}</p>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  ))}
+                <div className="bg-white rounded-xl border border-gray-200 p-8 shadow-sm">
+                  <p className="text-gray-600 mb-4">
+                    Our diverse team combines expertise in textile engineering, electronics, software development, 
+                    artificial intelligence, and industry-specific knowledge to deliver holistic solutions.
+                  </p>
+                  <p className="text-gray-600">
+                    We're a passionate group of innovators dedicated to pushing the boundaries of smart textile technology 
+                    and creating solutions that make a real difference in various industries.
+                  </p>
                 </div>
               </motion.div>
             </div>
