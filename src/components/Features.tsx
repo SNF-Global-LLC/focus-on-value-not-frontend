@@ -123,7 +123,7 @@ const Features = () => {
   }];
   const stepFlowItems = [{
     icon: <Microchip className="h-10 w-10 text-gray-700" />,
-    title: "WRLDS Proprietary Modules",
+    title: "carbonfactor.io Proprietary Solutions",
     description: "Our core technology components developed in-house"
   }, {
     icon: <Factory className="h-10 w-10 text-gray-700" />,
@@ -337,7 +337,7 @@ const Features = () => {
             </div>
             <h2 className="text-3xl font-bold mb-4">How our technology works</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              WRLDS builds hardware and software with proprietary and off-the-shelf modules, 
+              carbonfactor.io builds comprehensive carbon tracking solutions with proprietary and industry-standard modules, 
               allowing us to develop completely unique solutions at high speed and lower risk.
             </p>
           </div>

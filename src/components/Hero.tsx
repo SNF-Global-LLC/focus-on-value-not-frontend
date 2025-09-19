@@ -58,7 +58,7 @@ const Hero = () => {
             {/* Fallback image if video fails to load */}
             <img 
               src="/lovable-uploads/4bfa0d71-3ed2-4693-90b6-35142468907f.png" 
-              alt="WRLDS Technologies Connected People" 
+              alt="carbonfactor.io Carbon Tracking" 
               className={`w-full h-full object-cover opacity-70 grayscale ${isMobile ? 'object-right' : 'object-center'}`} 
             />
           </video>
@@ -68,9 +68,9 @@ const Hero = () => {
         <div className="banner-overlay bg-transparent pt-20 sm:pt-24 md:pt-32 w-full">
           <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center h-full">
             <motion.div className="w-full max-w-4xl text-center" variants={itemVariants}>
-              <motion.h1 className="banner-title text-white" variants={itemVariants}>Smart Supply Chain Integration Platform</motion.h1>
+              <motion.h1 className="banner-title text-white" variants={itemVariants}>Carbon Tracking Platform</motion.h1>
               <motion.p className="banner-subtitle text-gray-300 mt-4 sm:mt-6" variants={itemVariants}>
-                Revolutionizing supply chain visibility with IoT sensors, real-time tracking, and predictive analytics.
+                Revolutionizing carbon footprint management with real-time tracking, analytics, and actionable sustainability insights.
               </motion.p>
               <motion.div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 sm:mt-8 justify-center items-center" variants={itemVariants}>
                 {/* Styled as a button but using an anchor tag for project navigation */}
@@ -112,24 +112,24 @@ const Hero = () => {
             <div className="w-10 h-10 md:w-12 md:h-12 bg-success/10 flex items-center justify-center rounded-lg text-success mb-2 md:mb-3">
               <Cpu className="w-5 h-5 md:w-6 md:h-6" />
             </div>
-            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-primary">Real-Time Tracking</h3>
-            <p className="text-gray-600 text-xs md:text-sm">Advanced IoT sensors providing instant visibility across your entire supply chain network.</p>
+            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-primary">Carbon Monitoring</h3>
+            <p className="text-gray-600 text-xs md:text-sm">Advanced tracking systems providing instant visibility into your carbon footprint across operations.</p>
           </motion.div>
           
           <motion.div className="bg-white p-4 md:p-5 rounded-xl shadow-sm border border-gray-100 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md hover:border-accent/20" variants={itemVariants}>
             <div className="w-10 h-10 md:w-12 md:h-12 bg-accent/10 flex items-center justify-center rounded-lg text-accent mb-2 md:mb-3">
               <Code className="w-5 h-5 md:w-6 md:h-6" />
             </div>
-            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-primary">Predictive Analytics</h3>
-            <p className="text-gray-600 text-xs md:text-sm">AI-powered insights that predict disruptions, optimize routes, and reduce operational costs.</p>
+            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-primary">Sustainability Analytics</h3>
+            <p className="text-gray-600 text-xs md:text-sm">AI-powered insights that predict emissions trends, optimize processes, and reduce environmental impact.</p>
           </motion.div>
           
           <motion.div className="bg-white p-4 md:p-5 rounded-xl shadow-sm border border-gray-100 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md hover:border-accent/20" variants={itemVariants}>
             <div className="w-10 h-10 md:w-12 md:h-12 bg-primary/10 flex items-center justify-center rounded-lg text-primary mb-2 md:mb-3">
               <Layers className="w-5 h-5 md:w-6 md:h-6" />
             </div>
-            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-primary">End-to-End Integration</h3>
-            <p className="text-gray-600 text-xs md:text-sm">Seamless integration with existing ERP, WMS, and logistics systems for unified operations.</p>
+            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-primary">Comprehensive Reporting</h3>
+            <p className="text-gray-600 text-xs md:text-sm">Seamless integration with ESG reporting frameworks and sustainability management systems.</p>
           </motion.div>
         </motion.div>
       </div>

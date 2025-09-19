@@ -29,18 +29,18 @@ const About = () => {
               transition={{ duration: 0.5 }} 
               className="text-4xl font-bold mb-6"
             >
-              About WRLDS Technologies
+              About carbonfactor.io
             </motion.h1>
             
             <div className="prose prose-lg max-w-none">
-              <motion.p 
-                initial={{ opacity: 0 }} 
-                animate={{ opacity: 1 }} 
-                transition={{ duration: 0.5, delay: 0.2 }} 
-                className="text-xl text-gray-600 mb-12"
-              >
-                We're a team of innovators dedicated to revolutionizing smart textile technology for industries worldwide.
-              </motion.p>
+                <motion.p 
+                  initial={{ opacity: 0 }} 
+                  animate={{ opacity: 1 }} 
+                  transition={{ duration: 0.5, delay: 0.2 }} 
+                  className="text-xl text-gray-600 mb-12"
+                >
+                  We're a team of innovators dedicated to revolutionizing carbon tracking and sustainability solutions for industries worldwide.
+                </motion.p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
                 <motion.div 
@@ -51,12 +51,12 @@ const About = () => {
                 >
                   <h2 className="text-3xl font-bold">Our Mission</h2>
                   <p className="text-gray-600">
-                    At WRLDS Technologies, we're on a mission to transform ordinary textiles into intelligent, 
-                    data-driven solutions that improve safety, performance, and quality of life across industries.
+                    At carbonfactor.io, we're on a mission to transform how businesses track and manage their carbon footprint, 
+                    providing data-driven solutions that improve sustainability performance across industries.
                   </p>
                   <p className="text-gray-600">
-                    We believe that by embedding intelligence into everyday fabrics, we can create a more 
-                    connected, responsive, and safer world.
+                    We believe that by providing clear insights into carbon emissions, we can create a more 
+                    sustainable and environmentally responsible world.
                   </p>
                 </motion.div>
                 
@@ -97,19 +97,18 @@ const About = () => {
                 <h2 className="text-3xl font-bold mb-6">Our Story</h2>
                 <div className="bg-white rounded-xl border border-gray-200 p-8 shadow-sm">
                   <p className="text-gray-600 mb-4">
-                    We started with the ambition to make an inherently scattered and complex development area modular, 
-                    smart and available to analog brands. After successfully raising millions of dollars for development, 
-                    we spent the first two years in full code mode.
+                    We started with the ambition to make carbon tracking and environmental monitoring more accessible, 
+                    smart and available to businesses of all sizes. After successfully developing our core technology, 
+                    we spent the first years building robust tracking solutions.
                   </p>
                   <p className="text-gray-600 mb-4">
-                    The goal was to turn all the scattered hardware and building blocks into simple modules to be 
-                    assembled like Lego. During this time we took in a range of customers for whom we built prototypes - 
-                    a way for us to make sure what we built had bearing in real world use cases.
+                    The goal was to turn complex environmental data into simple, actionable insights that businesses 
+                    could easily understand and act upon. During this time we worked with early customers to ensure 
+                    our solutions had real-world impact and practical applications.
                   </p>
                   <p className="text-gray-600">
-                    In 2023 we felt we had reached a technology level allowing us to start working on enterprise level. 
-                    Since then, we have focused on textile integrations because of the enormous potential smart textiles 
-                    have across multiple industries from healthcare to public safety.
+                    Today we focus on providing comprehensive carbon tracking solutions because of the enormous potential 
+                    environmental monitoring has across multiple industries from manufacturing to logistics.
                   </p>
                 </div>
               </motion.div>
@@ -123,12 +122,12 @@ const About = () => {
                 <h2 className="text-3xl font-bold mb-6">Our Team</h2>
                 <div className="bg-white rounded-xl border border-gray-200 p-8 shadow-sm">
                   <p className="text-gray-600 mb-4">
-                    Our diverse team combines expertise in textile engineering, electronics, software development, 
-                    artificial intelligence, and industry-specific knowledge to deliver holistic solutions.
+                    Our diverse team combines expertise in environmental science, data analytics, software development, 
+                    artificial intelligence, and sustainability consulting to deliver comprehensive solutions.
                   </p>
                   <p className="text-gray-600">
-                    We're a passionate group of innovators dedicated to pushing the boundaries of smart textile technology 
-                    and creating solutions that make a real difference in various industries.
+                    We're a passionate group of innovators dedicated to pushing the boundaries of carbon tracking technology 
+                    and creating solutions that make a real difference in environmental sustainability.
                   </p>
                 </div>
               </motion.div>

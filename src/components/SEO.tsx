@@ -17,53 +17,53 @@ interface SEOProps {
 }
 
 const SEO: React.FC<SEOProps> = ({
-  title = 'WRLDS',
-  description = 'WRLDS Technologies: Pioneering smart engineering solutions with textile sensors for sports, safety, and performance monitoring.',
+  title = 'carbonfactor.io',
+  description = 'carbonfactor.io: Pioneering carbon tracking and sustainability solutions for businesses across all industries.',
   type = 'website',
-  name = 'WRLDS Technologies',
+  name = 'carbonfactor.io',
   imageUrl = '/lovable-uploads/48ecf6e2-5a98-4a9d-af6f-ae2265cd4098.png',
   publishDate,
   modifiedDate,
   author,
   category,
-  keywords = ['smart textiles', 'wearable technology', 'textile sensors', 'sports tech', 'safety monitoring', 'performance analytics'],
+  keywords = ['carbon tracking', 'sustainability solutions', 'environmental monitoring', 'carbon footprint', 'ESG reporting', 'carbon management'],
   isBlogPost = false
 }) => {
   const location = useLocation();
-  const currentUrl = `https://wrlds.com${location.pathname}`;
-  const absoluteImageUrl = imageUrl.startsWith('http') ? imageUrl : `https://wrlds.com${imageUrl}`;
+  const currentUrl = `https://carbonfactor.io${location.pathname}`;
+  const absoluteImageUrl = imageUrl.startsWith('http') ? imageUrl : `https://carbonfactor.io${imageUrl}`;
 
   // Enhanced keywords for specific posts
-  const enhancedKeywords = location.pathname.includes('smart-ppe-revolution') 
+  const enhancedKeywords = location.pathname.includes('carbon-tracking-revolution') 
     ? [
         ...keywords,
-        'personal protective equipment',
-        'workplace safety solutions',
-        'smart safety gear',
-        'construction safety technology',
-        'industrial safety monitoring',
-        'occupational health technology',
-        'safety compliance',
-        'worker protection systems',
-        'smart hard hats',
-        'connected safety equipment'
+        'carbon emissions tracking',
+        'sustainability reporting',
+        'carbon management systems',
+        'environmental compliance',
+        'ESG monitoring',
+        'greenhouse gas tracking',
+        'sustainability metrics',
+        'carbon footprint analysis',
+        'environmental data',
+        'carbon reduction strategies'
       ]
-    : location.pathname.includes('wearable-safety-tech-protecting-workers-roi')
+    : location.pathname.includes('sustainability-roi-business-impact')
     ? [
         ...keywords,
-        'workplace injury costs',
-        'safety ROI',
-        'workers compensation savings',
-        'ergonomic sensors',
-        'workplace safety investment',
-        'safety technology ROI',
-        'industrial wearables',
-        'safety cost reduction',
-        'occupational safety economics',
-        'safety technology partnerships',
-        'workplace injury statistics',
-        'safety equipment financing',
-        'injury prevention technology'
+        'sustainability ROI',
+        'carbon cost savings',
+        'environmental investment returns',
+        'green business metrics',
+        'sustainability cost reduction',
+        'carbon tracking ROI',
+        'environmental economics',
+        'sustainable business practices',
+        'carbon management benefits',
+        'sustainability partnerships',
+        'green technology adoption',
+        'environmental cost analysis',
+        'carbon reduction benefits'
       ]
     : keywords;
 
@@ -71,19 +71,15 @@ const SEO: React.FC<SEOProps> = ({
   const organizationStructuredData = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'WRLDS Technologies',
-    url: 'https://wrlds.com',
-    logo: 'https://wrlds.com/lovable-uploads/14ea3fe0-19d6-425c-b95b-4117bc41f3ca.png',
-    description: 'Pioneering smart engineering solutions with textile sensors',
+    name: 'carbonfactor.io',
+    url: 'https://carbonfactor.io',
+    logo: 'https://carbonfactor.io/lovable-uploads/14ea3fe0-19d6-425c-b95b-4117bc41f3ca.png',
+    description: 'Pioneering carbon tracking and sustainability solutions for businesses',
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'customer service',
-      email: 'info@wrlds.com'
-    },
-    sameAs: [
-      'https://www.linkedin.com/company/wrlds-technologies',
-      'https://twitter.com/wrldstechnologies'
-    ]
+      email: 'tony@snfactor.com'
+    }
   };
 
   // Enhanced BlogPosting JSON-LD structured data
@@ -105,19 +101,19 @@ const SEO: React.FC<SEOProps> = ({
     dateModified: modifiedDate || publishDate,
     author: {
       '@type': 'Organization',
-      name: author || 'WRLDS Technologies',
-      url: 'https://wrlds.com'
+      name: author || 'carbonfactor.io',
+      url: 'https://carbonfactor.io'
     },
     publisher: {
       '@type': 'Organization',
-      name: 'WRLDS Technologies',
+      name: 'carbonfactor.io',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://wrlds.com/lovable-uploads/14ea3fe0-19d6-425c-b95b-4117bc41f3ca.png',
+        url: 'https://carbonfactor.io/lovable-uploads/14ea3fe0-19d6-425c-b95b-4117bc41f3ca.png',
         width: 512,
         height: 512
       },
-      url: 'https://wrlds.com'
+      url: 'https://carbonfactor.io'
     },
     description: description,
     keywords: enhancedKeywords.join(', '),
@@ -126,65 +122,65 @@ const SEO: React.FC<SEOProps> = ({
     isAccessibleForFree: true
   } : null;
 
-  // Add FAQ structured data for Smart PPE post
-  const smartPPEFAQData = location.pathname.includes('smart-ppe-revolution') ? {
+  // Add FAQ structured data for Carbon Tracking post
+  const carbonTrackingFAQData = location.pathname.includes('carbon-tracking-revolution') ? {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     mainEntity: [
       {
         '@type': 'Question',
-        name: 'What is Smart PPE?',
+        name: 'What is carbon tracking?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Smart PPE (Personal Protective Equipment) refers to traditional safety gear enhanced with sensors, connectivity, and intelligence. Unlike ordinary PPE that acts as a passive barrier, smart PPE actively monitors conditions and provides real-time alerts to prevent accidents.'
+          text: 'Carbon tracking refers to monitoring and measuring greenhouse gas emissions across business operations. It provides real-time visibility into carbon footprint, helping organizations understand their environmental impact and identify reduction opportunities.'
         }
       },
       {
         '@type': 'Question',
-        name: 'How does smart PPE improve workplace safety?',
+        name: 'How does carbon tracking improve sustainability?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Smart PPE improves safety by providing real-time monitoring of environmental conditions, worker health metrics, and potential hazards. It can detect falls, monitor vital signs, sense toxic gases, and automatically alert emergency responders when needed.'
+          text: 'Carbon tracking improves sustainability by providing data-driven insights into emissions sources, enabling targeted reduction strategies, supporting compliance with environmental regulations, and helping organizations meet their sustainability goals.'
         }
       },
       {
         '@type': 'Question',
-        name: 'What industries benefit from smart PPE?',
+        name: 'What industries benefit from carbon tracking?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Smart PPE benefits multiple industries including construction, manufacturing, oil & gas, fire & rescue, healthcare, mining, and any workplace where safety is paramount. Each industry can customize the technology to address specific safety challenges.'
+          text: 'Carbon tracking benefits multiple industries including manufacturing, logistics, retail, healthcare, technology, and any business committed to reducing their environmental impact and achieving sustainability targets.'
         }
       }
     ]
   } : null;
 
-  // Add FAQ structured data for Wearable Safety Tech ROI post
-  const wearableSafetyROIFAQData = location.pathname.includes('wearable-safety-tech-protecting-workers-roi') ? {
+  // Add FAQ structured data for Sustainability ROI post
+  const sustainabilityROIFAQData = location.pathname.includes('sustainability-roi-business-impact') ? {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     mainEntity: [
       {
         '@type': 'Question',
-        name: 'How much do workplace injuries cost?',
+        name: 'What ROI can carbon tracking deliver?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'According to the National Safety Council, the average cost for a medically consulted work injury is $43,000 in 2023. With 2.2 injuries per 100 full-time workers, a 200-person site can expect about $215,000 in injury costs annually before accounting for downtime or replacement training.'
+          text: 'Carbon tracking delivers ROI through cost savings from energy efficiency, reduced waste, regulatory compliance benefits, improved brand reputation, and access to green financing. Studies show companies can reduce operational costs by 15-30% through effective carbon management.'
         }
       },
       {
         '@type': 'Question',
-        name: 'What ROI can wearable safety technology deliver?',
+        name: 'How much do carbon emissions cost businesses?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Real-world deployments show significant returns: one study found 54% lower OSHA recordables and 88% fewer lost workdays. Another warehouse study showed 62% of workers reduced risky movements by half, with total ergonomic hazards falling 39%.'
+          text: 'Carbon costs vary by industry and location but include carbon taxes, compliance fees, energy costs, and reputation risks. With carbon pricing expanding globally, businesses face increasing financial pressure to track and reduce emissions.'
         }
       },
       {
         '@type': 'Question',
-        name: 'Do insurance companies support wearable safety technology?',
+        name: 'Do investors value carbon tracking initiatives?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes, many insurers now bundle wearable device costs into workers compensation premiums. Employers keep the hardware as long as usage stays high because fewer claims leave insurers ahead financially. Regional carriers are expanding similar rebate schemes.'
+          text: 'Yes, ESG-focused investors increasingly require carbon tracking and sustainability reporting. Companies with strong environmental metrics often see improved valuations, easier access to capital, and reduced investment risk premiums.'
         }
       }
     ]
@@ -211,12 +207,12 @@ const SEO: React.FC<SEOProps> = ({
       <meta property="og:image" content={absoluteImageUrl} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
-      <meta property="og:site_name" content="WRLDS Technologies" />
+      <meta property="og:site_name" content="carbonfactor.io" />
       <meta property="og:locale" content="en_US" />
       {isBlogPost && category && <meta property="article:section" content={category} />}
       {isBlogPost && publishDate && <meta property="article:published_time" content={publishDate} />}
       {isBlogPost && modifiedDate && <meta property="article:modified_time" content={modifiedDate} />}
-      {isBlogPost && <meta property="article:publisher" content="https://wrlds.com" />}
+      {isBlogPost && <meta property="article:publisher" content="https://carbonfactor.io" />}
       
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
@@ -224,8 +220,6 @@ const SEO: React.FC<SEOProps> = ({
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={absoluteImageUrl} />
-      <meta name="twitter:site" content="@wrldstechnologies" />
-      <meta name="twitter:creator" content="@wrldstechnologies" />
       
       {/* LinkedIn specific */}
       <meta property="og:image:secure_url" content={absoluteImageUrl} />
@@ -250,15 +244,15 @@ const SEO: React.FC<SEOProps> = ({
         </script>
       )}
       
-      {smartPPEFAQData && (
+      {carbonTrackingFAQData && (
         <script type="application/ld+json">
-          {JSON.stringify(smartPPEFAQData)}
+          {JSON.stringify(carbonTrackingFAQData)}
         </script>
       )}
       
-      {wearableSafetyROIFAQData && (
+      {sustainabilityROIFAQData && (
         <script type="application/ld+json">
-          {JSON.stringify(wearableSafetyROIFAQData)}
+          {JSON.stringify(sustainabilityROIFAQData)}
         </script>
       )}
     </Helmet>

@@ -14,7 +14,7 @@ const ContactInfo = () => {
             Contact Us Today
           </h2>
           <p className="text-gray-700 text-lg max-w-2xl mx-auto">
-            Have questions about our AI-powered sensor solutions? Reach out to our team and let's discuss how we can help bring your ideas to life.
+            Have questions about our carbon tracking solutions? Reach out to our team and let's discuss how we can help bring your ideas to life.
           </p>
         </div>
 
@@ -22,12 +22,12 @@ const ContactInfo = () => {
           <div className="bg-white rounded-xl shadow-xl p-6 md:p-8 border border-gray-700">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Get In Touch</h3>
             <p className="text-gray-600 mb-6">
-              Ready to discuss your smart textile project? Contact our team to explore how we can help bring your ideas to life.
+              Ready to discuss your carbon tracking project? Contact our team to explore how we can help bring your ideas to life.
             </p>
             <div className="flex flex-col space-y-3">
-              <a href="mailto:info@wrlds.com" className="flex items-center justify-center text-gray-700 hover:text-blue-600">
+              <a href="mailto:tony@snfactor.com" className="flex items-center justify-center text-gray-700 hover:text-blue-600">
                 <Mail className="w-5 h-5 mr-2" />
-                info@wrlds.com
+                tony@snfactor.com
               </a>
             </div>
           </div>
