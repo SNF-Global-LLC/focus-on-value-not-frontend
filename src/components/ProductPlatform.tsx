@@ -69,7 +69,6 @@ const ProductPlatform = () => {
           <ArrowRight className="text-black w-6 h-6 rotate-90" />
         </div>
 
-        {/* snfactor Platform Column */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
