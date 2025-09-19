@@ -400,7 +400,11 @@ const Features = () => {
                 <p className="text-gray-600 mb-4">Working iteratively with customers to tailor solutions to their needs</p>
                 
                 <div className="relative mb-2">
-                  <Progress value={progressValue} className="h-3 bg-gray-200" />
+                  <Progress 
+                    value={progressValue} 
+                    className="h-3 bg-gray-200" 
+                    aria-label={`Development Sprint ${currentSprint} Progress: ${Math.round(progressValue)}% complete`}
+                  />
                 </div>
                 
                 <div className={cn("grid gap-1 mt-4", isMobile ? "grid-cols-2 gap-y-2" : "grid-cols-4")}>
