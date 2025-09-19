@@ -23,27 +23,27 @@ const Features = () => {
 
   const features = [
     {
-      icon: <Activity className="w-10 h-10 text-white transition-transform duration-300 transform" />,
-      title: "Sports Performance",
-      description: "Specialized fabrics that analyze form, provide instant feedback, and help prevent injuries in athletic equipment.",
+      icon: <Truck className="w-10 h-10 text-white transition-transform duration-300 transform" />,
+      title: "Logistics Optimization",
+      description: "Smart routing algorithms and real-time tracking systems that optimize delivery routes and reduce transit times.",
       image: "/lovable-uploads/48e540e5-6a25-44e4-b3f7-80f3bfc2777a.png"
     },
     {
-      icon: <Shield className="w-10 h-10 text-white transition-transform duration-300 transform" />,
-      title: "Military & Defense",
-      description: "Tactical gear with embedded sensors for soldier health monitoring, environmental awareness, and enhanced safety.",
+      icon: <Factory className="w-10 h-10 text-white transition-transform duration-300 transform" />,
+      title: "Warehouse Management",
+      description: "Automated inventory tracking, predictive restocking, and intelligent storage optimization for maximum efficiency.",
       image: "/lovable-uploads/48ecf6e2-5a98-4a9d-af6f-ae2265cd4098.png"
     },
     {
-      icon: <HardHat className="w-10 h-10 text-white transition-transform duration-300 transform" />,
-      title: "Industrial Safety",
-      description: "Protective workwear that detects hazards, monitors fatigue, and prevents workplace injuries through early intervention.",
+      icon: <Shield className="w-10 h-10 text-white transition-transform duration-300 transform" />,
+      title: "Risk Management",
+      description: "Proactive monitoring of supply chain vulnerabilities with automated alerts and contingency planning.",
       image: "/lovable-uploads/cf8966e3-de0d-445f-9fbd-ee6c48daa7ff.png"
     },
     {
-      icon: <Zap className="w-10 h-10 text-white transition-transform duration-300 transform" />,
-      title: "Thermal Regulation",
-      description: "Adaptive heating and cooling textiles that respond to body temperature and environmental conditions.",
+      icon: <RefreshCcw className="w-10 h-10 text-white transition-transform duration-300 transform" />,
+      title: "Sustainability Tracking",
+      description: "Monitor carbon footprint, track sustainable sourcing, and generate ESG compliance reports automatically.",
       image: "/lovable-uploads/6739bd63-bf19-4abd-bb23-0b613bbf7ac8.png"
     }
   ];
@@ -152,11 +152,11 @@ const Features = () => {
       <section id="features" className="relative bg-white overflow-hidden py-10 md:py-[50px] w-full">
         <div className="w-full px-4 sm:px-6 lg:px-8" ref={featuresRef}> 
           <div className="text-center mb-10 max-w-3xl mx-auto feature-item">
-            <div className="inline-block mb-2 px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
-              Textile Sensor Applications
+            <div className="inline-block mb-2 px-3 py-1 bg-success/10 text-success rounded-full text-sm font-medium">
+              Supply Chain Solutions
             </div>
             <p className="text-gray-600 mt-4">
-              Our textile sensor technology transforms ordinary fabrics into intelligent interfaces that collect data, monitor conditions, and enhance performance across diverse sectors.
+              Our integrated platform combines IoT sensors, AI analytics, and automation to create transparent, efficient, and resilient supply chain networks.
             </p>
           </div>
           
@@ -317,13 +317,13 @@ const Features = () => {
           </div>
         </div>
         <div className="text-center mt-12 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
-          <Button onClick={scrollToContact} className="inline-flex items-center px-4 sm:px-6 py-3 bg-gray-700 hover:bg-gray-800 text-white rounded-lg shadow-md hover:shadow-lg transition-all group w-full sm:w-auto">
-            Need Custom Solutions?
+          <Button onClick={scrollToContact} className="inline-flex items-center px-4 sm:px-6 py-3 bg-accent hover:bg-accent/90 text-white rounded-lg shadow-md hover:shadow-lg transition-all group w-full sm:w-auto">
+            Need Custom Integration?
             <MessageSquare className="ml-2 w-4 h-4 group-hover:animate-pulse" />
           </Button>
           
-          <Button onClick={() => window.scrollTo(0, 0)} className="inline-flex items-center px-4 sm:px-6 py-3 bg-white text-gray-700 rounded-lg border border-gray-200 hover:bg-gray-50 hover:shadow-md transition-all group w-full sm:w-auto">
-            Learn More About Our Technology
+          <Button onClick={() => window.scrollTo(0, 0)} className="inline-flex items-center px-4 sm:px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-lg shadow-md hover:shadow-lg transition-all group w-full sm:w-auto">
+            Explore Our Platform
             <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Button>
         </div>
