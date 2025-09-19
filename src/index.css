@@ -1,41 +1,95 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+ 
 @layer base {
   :root {
+    /* CarbonFactor Design System */
     --background: 0 0% 100%;
-    --foreground: 0 0% 15%;
+    --foreground: 210 20% 14%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 15%;
-
+    --card-foreground: 210 20% 14%;
+    --card-panel: 210 20% 98%;
+ 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 15%;
+    --popover-foreground: 210 20% 14%;
+ 
+    /* Primary blue accent (#3f85f6) */
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 217 91% 70%;
+    --primary-dark: 217 91% 50%;
+ 
+    /* Secondary green accent (#3BB273) for sustainability */
+    --secondary: 142 48% 47%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-light: 142 48% 57%;
+    --secondary-dark: 142 48% 37%;
+ 
+    --muted: 210 20% 96%;
+    --muted-foreground: 210 12% 46%;
+ 
+    --accent: 210 20% 96%;
+    --accent-foreground: 210 20% 14%;
+ 
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --primary: 0 0% 10%;
-    --primary-foreground: 0 0% 98%;
+    /* Status colors */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --critical: 0 84% 60%;
+    --critical-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 95%;
-    --secondary-foreground: 0 0% 15%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 217 91% 60%;
+ 
+    --radius: 0.75rem;
 
-    --muted: 0 0% 95%;
-    --muted-foreground: 0 0% 40%;
-
-    --accent: 0 0% 95%;
-    --accent-foreground: 0 0% 15%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 0 0% 50%;
-
-    --radius: 0.5rem;
+    /* Chart colors */
+    --chart-1: 217 91% 60%;
+    --chart-2: 142 48% 47%;
+    --chart-3: 38 92% 50%;
+    --chart-4: 271 91% 65%;
+    --chart-5: 0 84% 60%;
+  }
+ 
+  .dark {
+    --background: 210 20% 14%;
+    --foreground: 0 0% 95%;
+ 
+    --card: 210 20% 14%;
+    --card-foreground: 0 0% 95%;
+    --card-panel: 210 20% 18%;
+ 
+    --popover: 210 20% 14%;
+    --popover-foreground: 0 0% 95%;
+ 
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+ 
+    --secondary: 142 48% 47%;
+    --secondary-foreground: 0 0% 100%;
+ 
+    --muted: 210 20% 18%;
+    --muted-foreground: 210 12% 64%;
+ 
+    --accent: 210 20% 18%;
+    --accent-foreground: 0 0% 95%;
+ 
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+ 
+    --border: 210 20% 18%;
+    --input: 210 20% 18%;
+    --ring: 217 91% 60%;
   }
 }
 
@@ -43,15 +97,22 @@
   * {
     @apply border-border;
   }
-
-  html, body {
-    @apply m-0 p-0 overflow-x-hidden;
-    width: 100%;
-    max-width: 100%;
-  }
-
   body {
-    @apply bg-white text-foreground font-space;
+    @apply bg-background text-foreground font-inter;
+  }
+}
+
+@layer components {
+  .metric-card {
+    @apply bg-card border border-border rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow;
+  }
+  
+  .chart-container {
+    @apply bg-card border border-border rounded-xl p-6 shadow-sm;
+  }
+  
+  .ai-recommendation {
+    @apply bg-card-panel border border-border rounded-lg p-4 hover:shadow-sm transition-shadow;
   }
 }
 
