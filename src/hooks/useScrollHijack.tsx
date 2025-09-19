@@ -9,47 +9,55 @@ export const useScrollHijack = (sectionRef: React.RefObject<HTMLElement>, itemCo
   const handleScroll = useCallback((e: Event) => {
     if (!sectionRef.current) return;
 
-    const section = sectionRef.current;
-    const rect = section.getBoundingClientRect();
-    const windowHeight = window.innerHeight;
-    
-    // Check if we're in the section
-    const isInSection = rect.top <= 0 && rect.bottom > windowHeight;
-    
-    if (isInSection && !isHijacked) {
-      setIsHijacked(true);
-      document.body.style.overflow = 'hidden';
-    }
-    
+    // Prevent default immediately if we're in hijacked mode
     if (isHijacked) {
       e.preventDefault();
+    }
+
+    // Use requestAnimationFrame to batch layout reads and avoid forced reflows
+    requestAnimationFrame(() => {
+      if (!sectionRef.current) return;
       
-      const deltaY = (e as WheelEvent).deltaY;
+      const section = sectionRef.current;
+      const rect = section.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
       
-      if (deltaY > 0) {
-        // Scrolling down
-        if (currentIndex < itemCount - 1) {
-          setCurrentIndex(prev => prev + 1);
+      // Check if we're in the section
+      const isInSection = rect.top <= 0 && rect.bottom > windowHeight;
+      
+      if (isInSection && !isHijacked) {
+        setIsHijacked(true);
+        document.body.style.overflow = 'hidden';
+      }
+      
+      if (isHijacked) {
+        const deltaY = (e as WheelEvent).deltaY;
+        
+        if (deltaY > 0) {
+          // Scrolling down
+          if (currentIndex < itemCount - 1) {
+            setCurrentIndex(prev => prev + 1);
+          } else {
+            // Last item, resume normal scrolling
+            setIsHijacked(false);
+            setCurrentIndex(0);
+            document.body.style.overflow = 'auto';
+            window.scrollBy(0, 100); // Continue scrolling down
+          }
         } else {
-          // Last item, resume normal scrolling
-          setIsHijacked(false);
-          setCurrentIndex(0);
-          document.body.style.overflow = 'auto';
-          window.scrollBy(0, 100); // Continue scrolling down
-        }
-      } else {
-        // Scrolling up
-        if (currentIndex > 0) {
-          setCurrentIndex(prev => prev - 1);
-        } else {
-          // First item, resume normal scrolling upward
-          setIsHijacked(false);
-          setCurrentIndex(0);
-          document.body.style.overflow = 'auto';
-          window.scrollBy(0, -100); // Continue scrolling up
+          // Scrolling up
+          if (currentIndex > 0) {
+            setCurrentIndex(prev => prev - 1);
+          } else {
+            // First item, resume normal scrolling upward
+            setIsHijacked(false);
+            setCurrentIndex(0);
+            document.body.style.overflow = 'auto';
+            window.scrollBy(0, -100); // Continue scrolling up
+          }
         }
       }
-    }
+    });
   }, [isHijacked, currentIndex, itemCount, sectionRef]);
 
   useEffect(() => {
