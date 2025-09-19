@@ -14,7 +14,7 @@ const ProductPlatform = () => {
       >
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Product</h2>
         <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-4xl">
-          5 years invested into tech focused end-to-end platform allowing customer brand to own pricing, branding, marketing and sales. snfactor can help with all aspects of
+          5 years invested into tech focused end-to-end platform allowing customer brand to own pricing, branding, marketing and sales. Wrlds can help with all aspects of
           product creation, certification, initial production and app development.
         </p>
       </motion.div>

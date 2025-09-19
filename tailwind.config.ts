@@ -55,8 +55,7 @@ export default {
 				},
 				card: {
 					DEFAULT: 'hsl(var(--card))',
-					foreground: 'hsl(var(--card-foreground))',
-					panel: 'hsl(var(--card-panel))'
+					foreground: 'hsl(var(--card-foreground))'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
@@ -68,7 +67,7 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				snfactor: {
+				wrlds: {
 					teal: '#9F9EA1',
 					dark: '#3F3F3F',
 					light: '#F6F6F7',
@@ -82,7 +81,6 @@ export default {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 			fontFamily: {
-				'inter': ['Inter', 'sans-serif'],
 				'space': ['Space Grotesk', 'sans-serif'],
 			},
 			keyframes: {
