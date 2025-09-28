@@ -1,19 +1,8 @@
-import { ArrowRight, Code, Cpu, Layers, MessageSquare } from "lucide-react";
+import { ArrowRight, Code, Cpu, Layers, MessageSquare, BarChart3 } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
-import { BarChart3 } from "lucide-react";
-import { Link } from "react-router-dom";
-
-// Add this button/link where you want the navigation
-<Button asChild>
-  <Link to="/dashboard" className="flex items-center gap-2">
-    <BarChart3 className="h-4 w-4" />
-    View Dashboard
-  </Link>
-</Button>
 
 
 const Hero = () => {
