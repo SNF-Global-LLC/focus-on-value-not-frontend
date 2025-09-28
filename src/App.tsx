@@ -10,6 +10,7 @@ import DevelopmentProcess from "./pages/DevelopmentProcess";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
 import BlogPostDetail from "./pages/BlogPostDetail";
+import Dashboard from "./pages/Dashboard";
 
 
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPostDetail />} />
+            <Route path="/dashboard" element={<Dashboard />} />
             <Route path="*" element={<Index />} />
           </Routes>
         </BrowserRouter>
