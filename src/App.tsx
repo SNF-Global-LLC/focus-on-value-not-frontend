@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Blog from "./pages/Blog";
 import BlogPostDetail from "./pages/BlogPostDetail";
 import Dashboard from "./pages/Dashboard";
+import EcommerceData from "./pages/EcommerceData";
 
 
 const App = () => {
@@ -29,6 +30,7 @@ const App = () => {
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPostDetail />} />
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/ecommerce-data" element={<EcommerceData />} />
             <Route path="*" element={<Index />} />
           </Routes>
         </BrowserRouter>
