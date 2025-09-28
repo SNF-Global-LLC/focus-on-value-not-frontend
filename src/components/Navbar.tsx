@@ -1,15 +1,12 @@
-
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { Menu, X, ChevronDown, BarChart3 } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger, navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
-
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 10) {
@@ -21,11 +18,9 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -35,20 +30,18 @@ const Navbar = () => {
     }
     setIsMenuOpen(false);
   };
-
-  return (
-    <motion.nav className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full", isScrolled ? "bg-white shadow-sm" : "bg-black")} initial={{
-      opacity: 1,
-      y: 0
-    }} animate={{
-      opacity: 1,
-      y: 0
-    }}>
+  return <motion.nav className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full", isScrolled ? "bg-white shadow-sm" : "bg-black")} initial={{
+    opacity: 1,
+    y: 0
+  }} animate={{
+    opacity: 1,
+    y: 0
+  }}>
       <div className="w-full px-4 sm:px-6 lg:px-8 mx-auto">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
-              <span className={cn("text-2xl font-bold", isScrolled ? "text-gray-900" : "text-white")}>SNFactor</span>
+              <img src="/lovable-uploads/7d120ee6-3614-4b75-9c35-716d54490d67.png" alt="snfAuto" className={cn("h-8 w-auto", isScrolled ? "" : "brightness-0 invert")} />
             </Link>
           </div>
           
@@ -74,19 +67,19 @@ const Navbar = () => {
                 
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className={cn(isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
-                    Customer Success Stories
+                    Customer Cases
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid gap-3 p-4 w-[400px]">
                       <li>
-                        <Link to="/projects/carbon-optimization" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Manufacturing Carbon Optimization</div>
-                          <p className="text-sm text-gray-500">22% carbon reduction in automotive manufacturing</p>
+                        <Link to="/projects/firecat" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+                          <div className="font-medium">FireCat 6th SENSE</div>
+                          <p className="text-sm text-gray-500">Smart textiles for firefighter safety</p>
                         </Link>
                       </li>
                       <li>
                         <Link to="/projects/sport-retail" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Sports Performance</div>
+                          
                           <p className="text-sm text-gray-500">Advanced tracking for athletes</p>
                         </Link>
                       </li>
@@ -121,13 +114,13 @@ const Navbar = () => {
                       <li>
                         <Link to="/tech-details" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
                           <div className="font-medium">Technology Details</div>
-                          <p className="text-sm text-gray-500">How our manufacturing intelligence platform works</p>
+                          <p className="text-sm text-gray-500">How our smart textile platform works</p>
                         </Link>
                       </li>
                       <li>
                         <Link to="/development-process" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
                           <div className="font-medium">Development Process</div>
-                          <p className="text-sm text-gray-500">Our approach to manufacturing intelligence solutions</p>
+                          <p className="text-sm text-gray-500">Our approach to creating custom solutions</p>
                         </Link>
                       </li>
                       <li>
@@ -192,61 +185,61 @@ const Navbar = () => {
       <div className={cn("md:hidden transition-all duration-300 overflow-hidden w-full", isMenuOpen ? "max-h-80 opacity-100" : "max-h-0 opacity-0")}>
         <div className={cn("px-3 pt-2 pb-3 space-y-1 shadow-sm overflow-y-auto max-h-80", isScrolled ? "bg-white" : "bg-black")}>
           <Link to="/" className={cn("block px-3 py-1.5 rounded-md text-sm", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
-            setIsMenuOpen(false);
-            window.scrollTo(0, 0);
-          }}>
+          setIsMenuOpen(false);
+          window.scrollTo(0, 0);
+        }}>
             Home
           </Link>
           
           <Link to="/about" className={cn("block px-3 py-1.5 rounded-md text-sm", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
-            setIsMenuOpen(false);
-            window.scrollTo(0, 0);
-          }}>
+          setIsMenuOpen(false);
+          window.scrollTo(0, 0);
+        }}>
             About Us
           </Link>
           
           {/* Simplified Customer Cases - no dropdown */}
-          <Link to="/projects/carbon-optimization" className={cn("block px-3 py-1.5 rounded-md text-sm", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
-            setIsMenuOpen(false);
-            window.scrollTo(0, 0);
-          }}>
-            Customer Success Stories
+          <Link to="/projects/firecat" className={cn("block px-3 py-1.5 rounded-md text-sm", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
+          setIsMenuOpen(false);
+          window.scrollTo(0, 0);
+        }}>
+            Customer Cases
           </Link>
           
           {/* Simplified Learn More - no dropdown */}
           <Link to="/tech-details" className={cn("block px-3 py-1.5 rounded-md text-sm", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
-            setIsMenuOpen(false);
-            window.scrollTo(0, 0);
-          }}>
+          setIsMenuOpen(false);
+          window.scrollTo(0, 0);
+        }}>
             Learn More
           </Link>
           
           <Link to="/blog" className={cn("block px-3 py-1.5 rounded-md text-sm", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
-            setIsMenuOpen(false);
-            window.scrollTo(0, 0);
-          }}>
+          setIsMenuOpen(false);
+          window.scrollTo(0, 0);
+        }}>
             News
           </Link>
           
           <Link to="/ecommerce-data" className={cn("block px-3 py-1.5 rounded-md text-sm", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
-            setIsMenuOpen(false);
-            window.scrollTo(0, 0);
-          }}>
+          setIsMenuOpen(false);
+          window.scrollTo(0, 0);
+        }}>
             Analytics
           </Link>
           
           <Link to="/dashboard" className={cn("flex items-center gap-2 px-3 py-1.5 rounded-md text-sm", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
-            setIsMenuOpen(false);
-            window.scrollTo(0, 0);
-          }}>
+          setIsMenuOpen(false);
+          window.scrollTo(0, 0);
+        }}>
             <BarChart3 className="h-4 w-4" />
             Dashboard
           </Link>
           
           <Link to="/careers" className={cn("block px-3 py-1.5 rounded-md text-sm", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
-            setIsMenuOpen(false);
-            window.scrollTo(0, 0);
-          }}>
+          setIsMenuOpen(false);
+          window.scrollTo(0, 0);
+        }}>
             Careers
           </Link>
           
@@ -255,8 +248,6 @@ const Navbar = () => {
           </button>
         </div>
       </div>
-    </motion.nav>
-  );
+    </motion.nav>;
 };
-
 export default Navbar;
