@@ -10,6 +10,11 @@ import DevelopmentProcess from "./pages/DevelopmentProcess";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
 import BlogPostDetail from "./pages/BlogPostDetail";
+import Dashboard from "./pages/Dashboard";
+
+// Add this route to your Routes:
+<Route path="/dashboard" element={<Dashboard />} />
+
 
 const App = () => {
   const [queryClient] = useState(() => new QueryClient());
