@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, BarChart3 } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger, navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
@@ -147,11 +147,20 @@ const Navbar = () => {
                 
                 <NavigationMenuItem>
                   <Link to="/ecommerce-data">
-                    <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
-                      Analytics
-                    </NavigationMenuLink>
-                  </Link>
-                </NavigationMenuItem>
+                     <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
+                       Analytics
+                     </NavigationMenuLink>
+                   </Link>
+                 </NavigationMenuItem>
+                 
+                 <NavigationMenuItem>
+                   <Link to="/dashboard">
+                     <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "flex items-center gap-2", isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
+                       <BarChart3 className="h-4 w-4" />
+                       Dashboard
+                     </NavigationMenuLink>
+                   </Link>
+                 </NavigationMenuItem>
                 
                 <NavigationMenuItem>
                   <Link to="/careers">
@@ -224,6 +233,14 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}>
             Analytics
+          </Link>
+          
+          <Link to="/dashboard" className={cn("flex items-center gap-2 px-3 py-1.5 rounded-md text-sm", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
+            setIsMenuOpen(false);
+            window.scrollTo(0, 0);
+          }}>
+            <BarChart3 className="h-4 w-4" />
+            Dashboard
           </Link>
           
           <Link to="/careers" className={cn("block px-3 py-1.5 rounded-md text-sm", isScrolled ? "text-gray-700 hover:bg-gray-50" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
