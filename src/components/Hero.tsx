@@ -2,6 +2,7 @@ import { ArrowRight, Code, Cpu, Layers, MessageSquare } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const isMobile = useIsMobile();
@@ -98,6 +99,10 @@ const Hero = () => {
                   Get Started
                   <MessageSquare className="ml-2 w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform" />
                 </button>
+
+                <Button asChild className="w-full sm:w-auto min-h-[44px] px-6 sm:px-8 py-3 bg-secondary text-secondary-foreground rounded-md hover:bg-secondary/80 transition-all shadow-lg hover:shadow-xl hover:shadow-secondary/20 text-sm sm:text-base font-medium">
+                  <Link to="/dashboard">View Dashboard</Link>
+                </Button>
               </motion.div>
             </motion.div>
           </div>
