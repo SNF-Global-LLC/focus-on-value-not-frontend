@@ -108,18 +108,18 @@ const Features = () => {
     };
   }, []);
 
-  const sensorCaseStudies = [{
+  const manufacturingCaseStudies = [{
     image: "/lovable-uploads/843446fe-638e-4efb-b885-ed3cd505325a.png",
-    title: "Firefighter Safety",
-    description: "Advanced protective gear with gas, temperature, positioning, and motion sensors for safer emergency response."
+    title: "Automotive Manufacturing",
+    description: "AI-powered production optimization reducing carbon emissions by 22% while maintaining quality standards and operational efficiency."
   }, {
     image: "/lovable-uploads/5463c9c5-0946-4280-a14b-17636ff69a98.png",
-    title: "Industrial Worker Protection",
-    description: "Safety workwear with vibration, pressure, and heating sensors to prevent injuries and monitor environmental hazards."
+    title: "Steel Processing",
+    description: "CBAM compliance automation with real-time emission tracking, reducing regulatory preparation time from months to weeks."
   }, {
     image: "/lovable-uploads/c5f8ee24-9815-4ebe-b65d-6f3d449feb8b.png",
-    title: "Sports Performance",
-    description: "Smart athletic wear with temperature and pressure sensors that track hydration, foot strike patterns, and performance metrics."
+    title: "Electronics Assembly",
+    description: "Smart factory intelligence monitoring energy consumption, defect rates, and production efficiency with AWS Bedrock integration."
   }];
   const stepFlowItems = [{
     icon: <Microchip className="h-10 w-10 text-gray-700" />,
@@ -156,7 +156,7 @@ const Features = () => {
               Supply Chain Solutions
             </div>
             <p className="text-gray-600 mt-4">
-              Our integrated platform combines IoT sensors, AI analytics, and automation to create transparent, efficient, and resilient supply chain networks.
+              Our integrated platform combines manufacturing intelligence, carbon tracking, and AWS GenAI to create transparent, efficient, and sustainable production networks.
             </p>
           </div>
           
@@ -278,12 +278,12 @@ const Features = () => {
           <div className="mt-16 mb-8 feature-item">
             <div className="text-center mb-8">
               <div className="inline-block mb-2 px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
-                Textile Sensor Applications
+                Manufacturing Intelligence Applications
               </div>
               <h3 className="text-2xl font-bold">Real-World Use Cases</h3>
               <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
-                Explore how our textile sensors are applied in different professional contexts, 
-                from emergency response to construction and athletics.
+                Discover how our manufacturing intelligence platforms are applied across different industrial contexts, 
+                from carbon optimization to production efficiency.
                 <span className="block text-sm mt-1 text-blue-500">Scroll horizontally to see more examples →</span>
               </p>
             </div>
@@ -291,7 +291,7 @@ const Features = () => {
             <div className="rounded-xl overflow-hidden bg-white p-4 feature-item">
               <Carousel className="w-full max-w-7xl mx-auto">
                 <CarouselContent className="flex">
-                  {sensorCaseStudies.map((study, index) => <CarouselItem key={index} className="md:basis-1/3 flex-shrink-0">
+                  {manufacturingCaseStudies.map((study, index) => <CarouselItem key={index} className="md:basis-1/3 flex-shrink-0">
                       <Card className="border border-gray-100 shadow-md">
                         <CardContent className="p-0">
                           <div className="w-full h-full">
@@ -311,7 +311,7 @@ const Features = () => {
                 </div>
               </Carousel>
               <div className="text-center mt-6 text-sm text-gray-600">
-                <p className="font-medium">These examples showcase just a few ways our textile sensors can enhance safety and performance</p>
+                <p className="font-medium">These examples showcase how our manufacturing intelligence solutions enhance efficiency, reduce carbon emissions, and drive sustainable growth</p>
               </div>
             </div>
           </div>

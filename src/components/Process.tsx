@@ -5,29 +5,29 @@ import { Check } from "lucide-react";
 
 const processes = [{
   id: 1,
-  title: "Textile Sensor Design",
-  description: "We begin by designing custom textile sensors specifically for your industry and use case, selecting appropriate conductive materials and sensor types.",
-  steps: ["Industry-specific requirement analysis", "Sensor type and material selection", "Prototype sensor development", "Initial testing and calibration"]
+  title: "Manufacturing Assessment",
+  description: "We begin by analyzing your current manufacturing processes, carbon footprint, and operational efficiency to identify optimization opportunities.",
+  steps: ["Production line analysis", "Carbon emission baseline assessment", "Efficiency bottleneck identification", "ROI opportunity mapping"]
 }, {
   id: 2,
-  title: "Garment Integration",
-  description: "Our engineering team seamlessly integrates sensors into clothing and footwear while maintaining comfort, durability, and washability.",
-  steps: ["Ergonomic placement optimization", "Non-intrusive integration techniques", "Durability and washability testing", "Comfort and user experience validation"]
+  title: "Platform Integration",
+  description: "Our team seamlessly integrates carbonfactor.io and forgediq.io platforms with your existing systems and AWS infrastructure.",
+  steps: ["System integration planning", "AWS Bedrock GenAI setup", "Real-time data pipeline configuration", "Dashboard customization and testing"]
 }, {
   id: 3,
-  title: "AI & Data Analytics",
-  description: "We develop specialized algorithms that transform textile sensor data into actionable insights unique to your industry requirements.",
-  steps: ["Industry-specific algorithm development", "ML model training with domain data", "Real-time analytics implementation", "Insight delivery optimization"]
+  title: "AI & Analytics Implementation",
+  description: "We deploy specialized AI models that transform manufacturing data into actionable insights for carbon reduction and process optimization.",
+  steps: ["AI model training with your data", "Real-time analytics deployment", "CBAM compliance automation", "Predictive maintenance setup"]
 }, {
   id: 4,
-  title: "Production & Certification",
-  description: "We handle manufacturing, quality control, and ensure all textile sensor products meet relevant industry standards and certifications.",
-  steps: ["Textile manufacturing partner selection", "Quality assurance processes", "Industry-specific certification procurement", "Initial production supervision"]
+  title: "CBAM Compliance & Certification",
+  description: "We ensure your operations meet EU CBAM requirements and other environmental regulations while maintaining production efficiency.",
+  steps: ["CBAM compliance framework setup", "Emission reporting automation", "Regulatory documentation preparation", "Audit readiness verification"]
 }, {
   id: 5,
-  title: "Deployment & Support",
-  description: "We provide comprehensive training, implementation assistance, and ongoing support to ensure successful adoption and continuous improvement.",
-  steps: ["User training and onboarding", "Data interpretation guidance", "Performance monitoring", "Continuous improvement iterations"]
+  title: "Optimization & Support",
+  description: "We provide ongoing optimization recommendations, performance monitoring, and support to ensure continuous improvement in efficiency and sustainability.",
+  steps: ["Performance monitoring setup", "Optimization recommendations", "Team training and onboarding", "Continuous improvement iterations"]
 }];
 
 const Process = () => {
@@ -96,9 +96,9 @@ const Process = () => {
     <section id="process" className="bg-white py-16">
       <div className="container mx-auto px-4" ref={processRef}>
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Our Development Process</h2>
+          <h2 className="text-3xl font-bold mb-4">Our Implementation Process</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            We follow a structured approach to developing textile sensor solutions that ensures quality, reliability, and performance.
+            We follow a structured approach to implementing manufacturing intelligence solutions that ensures measurable results, compliance, and continuous improvement.
           </p>
         </div>
         

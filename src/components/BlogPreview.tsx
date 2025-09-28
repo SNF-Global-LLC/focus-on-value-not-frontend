@@ -23,7 +23,7 @@ const BlogPreview = () => {
             </div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black">Latest Updates</h2>
             <p className="text-gray-800 max-w-xl">
-              Explore our latest insights on smart textile technology, industry trends, and innovation.
+              Explore our latest insights on manufacturing intelligence, carbon optimization, and sustainability solutions.
             </p>
           </div>
           <Link to="/blog" className="mt-4 md:mt-0">

@@ -14,8 +14,8 @@ const ProductPlatform = () => {
       >
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Product</h2>
         <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-4xl">
-          5 years invested into tech focused end-to-end platform allowing customer brand to own pricing, branding, marketing and sales. Wrlds can help with all aspects of
-          product creation, certification, initial production and app development.
+          AWS Premier Partner delivering manufacturing intelligence through carbonfactor.io and forgediq.io platforms. SNF Global helps factories achieve 
+          measurable results: 10x improvements in cost, lead time, and efficiency while reducing carbon emissions by up to 22%.
         </p>
       </motion.div>
 
@@ -34,12 +34,12 @@ const ProductPlatform = () => {
             
             <div className="space-y-3">
               {[
-                { icon: <Gauge className="text-black w-4 h-4 sm:w-5 sm:h-5" />, text: "Motion Sensors" },
-                { icon: <Cpu className="text-black w-4 h-4 sm:w-5 sm:h-5" />, text: "Heart Rate Sensors" },
-                { icon: <Bluetooth className="text-black w-4 h-4 sm:w-5 sm:h-5" />, text: "Wireless Connectivity" },
-                { icon: <Battery className="text-black w-4 h-4 sm:w-5 sm:h-5" />, text: "Power Management" },
-                { icon: <Database className="text-black w-4 h-4 sm:w-5 sm:h-5" />, text: "Local Storage" },
-                { icon: <Wifi className="text-black w-4 h-4 sm:w-5 sm:h-5" />, text: "Cellular Connection" }
+                { icon: <Gauge className="text-black w-4 h-4 sm:w-5 sm:h-5" />, text: "Manufacturing Sensors" },
+                { icon: <Cpu className="text-black w-4 h-4 sm:w-5 sm:h-5" />, text: "Production Monitoring" },
+                { icon: <Bluetooth className="text-black w-4 h-4 sm:w-5 sm:h-5" />, text: "IoT Connectivity" },
+                { icon: <Battery className="text-black w-4 h-4 sm:w-5 sm:h-5" />, text: "Energy Management" },
+                { icon: <Database className="text-black w-4 h-4 sm:w-5 sm:h-5" />, text: "Data Collection" },
+                { icon: <Wifi className="text-black w-4 h-4 sm:w-5 sm:h-5" />, text: "Real-time Transmission" }
               ].map((item, index) => (
                 <div key={index} className="bg-white rounded-lg p-3 sm:p-4 flex items-center">
                   <div className="mr-3 sm:mr-4 flex-shrink-0">{item.icon}</div>
@@ -49,7 +49,7 @@ const ProductPlatform = () => {
             </div>
             
             <p className="text-xs sm:text-sm text-center mt-4 sm:mt-6">
-              The hardware that collects data<br />from the physical world
+              Smart manufacturing hardware that collects<br />production and carbon emissions data
             </p>
           </div>
         </motion.div>
@@ -77,24 +77,24 @@ const ProductPlatform = () => {
         >
           <div className="bg-gray-200 rounded-xl p-4 sm:p-6">
             <div className="flex flex-col items-center mb-3 sm:mb-4">
-              <h3 className="text-xl sm:text-2xl font-bold text-center mb-0">wrlds</h3>
-              <p className="text-lg sm:text-xl font-medium text-center">Platform</p>
+              <h3 className="text-xl sm:text-2xl font-bold text-center mb-0">SNF Global</h3>
+              <p className="text-lg sm:text-xl font-medium text-center">Intelligent Factory Platform</p>
             </div>
             
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-3">
               {[
-                { icon: <Database className="w-4 h-4 sm:w-5 sm:h-5" />, name: "Cloud Storage" },
-                { icon: <Gauge className="w-4 h-4 sm:w-5 sm:h-5" />, name: "Data Processing" },
-                { icon: <Cpu className="w-4 h-4 sm:w-5 sm:h-5" />, name: "AI & ML" },
-                { icon: <Battery className="w-4 h-4 sm:w-5 sm:h-5" />, name: "Power Opt." },
-                { icon: <Code className="w-4 h-4 sm:w-5 sm:h-5" />, name: "Software" },
-                { icon: <Smartphone className="w-4 h-4 sm:w-5 sm:h-5" />, name: "Demo Apps" },
+                { icon: <Database className="w-4 h-4 sm:w-5 sm:h-5" />, name: "Carbon Tracking" },
+                { icon: <Gauge className="w-4 h-4 sm:w-5 sm:h-5" />, name: "Manufacturing Intel" },
+                { icon: <Cpu className="w-4 h-4 sm:w-5 sm:h-5" />, name: "AWS Bedrock AI" },
+                { icon: <Battery className="w-4 h-4 sm:w-5 sm:h-5" />, name: "Energy Optimization" },
+                { icon: <Code className="w-4 h-4 sm:w-5 sm:h-5" />, name: "CBAM Compliance" },
+                { icon: <Smartphone className="w-4 h-4 sm:w-5 sm:h-5" />, name: "forgediq.io Platform" },
                 { icon: <Wifi className="w-4 h-4 sm:w-5 sm:h-5" />, name: "Real-time Data" },
-                { icon: <Server className="w-4 h-4 sm:w-5 sm:h-5" />, name: "Edge Compute" },
-                { icon: <Code className="w-4 h-4 sm:w-5 sm:h-5" />, name: "APIs" },
-                { icon: <Server className="w-4 h-4 sm:w-5 sm:h-5" />, name: "Infrastructure" },
-                { icon: <Cloud className="w-4 h-4 sm:w-5 sm:h-5" />, name: "Cloud" },
-                { icon: <Code className="w-4 h-4 sm:w-5 sm:h-5" />, name: "Dev Tools" }
+                { icon: <Server className="w-4 h-4 sm:w-5 sm:h-5" />, name: "AWS Premier" },
+                { icon: <Code className="w-4 h-4 sm:w-5 sm:h-5" />, name: "GenAI APIs" },
+                { icon: <Server className="w-4 h-4 sm:w-5 sm:h-5" />, name: "Cloud Infrastructure" },
+                { icon: <Cloud className="w-4 h-4 sm:w-5 sm:h-5" />, name: "Vertical Integration" },
+                { icon: <Code className="w-4 h-4 sm:w-5 sm:h-5" />, name: "carbonfactor.io" }
               ].map((item, index) => (
                 <div key={index} className="bg-white rounded-lg p-2 sm:p-3 text-center flex flex-col items-center justify-center">
                   <div className="mb-1 sm:mb-2">{item.icon}</div>
@@ -104,7 +104,7 @@ const ProductPlatform = () => {
             </div>
             
             <p className="text-xs sm:text-sm text-center mt-4 sm:mt-6">
-              Our platform processes data and<br />powers intelligent applications
+              SNF Global's AWS Premier platform delivers<br />manufacturing intelligence and carbon optimization
             </p>
           </div>
         </motion.div>
@@ -137,10 +137,10 @@ const ProductPlatform = () => {
             
             <div className="space-y-3">
               {[
-                { icon: <MonitorSmartphone className="text-black w-4 h-4 sm:w-5 sm:h-5" />, text: "Analytics Dashboard" },
-                { icon: <Smartphone className="text-black w-4 h-4 sm:w-5 sm:h-5" />, text: "Mobile Applications" },
-                { icon: <FileText className="text-black w-4 h-4 sm:w-5 sm:h-5" />, text: "Customized Reports" },
-                { icon: <Code className="text-black w-4 h-4 sm:w-5 sm:h-5" />, text: "Third-party Integration" }
+                { icon: <MonitorSmartphone className="text-black w-4 h-4 sm:w-5 sm:h-5" />, text: "Manufacturing Dashboards" },
+                { icon: <Smartphone className="text-black w-4 h-4 sm:w-5 sm:h-5" />, text: "carbonfactor.io Platform" },
+                { icon: <FileText className="text-black w-4 h-4 sm:w-5 sm:h-5" />, text: "CBAM Compliance Reports" },
+                { icon: <Code className="text-black w-4 h-4 sm:w-5 sm:h-5" />, text: "AWS Integration APIs" }
               ].map((item, index) => (
                 <div key={index} className="bg-white rounded-lg p-3 sm:p-4 flex items-center">
                   <div className="mr-3 sm:mr-4 flex-shrink-0">{item.icon}</div>
@@ -150,7 +150,7 @@ const ProductPlatform = () => {
             </div>
             
             <p className="text-xs sm:text-sm text-center mt-4 sm:mt-6">
-              How people interact with and<br />benefit from the collected data
+              How manufacturers access insights and<br />achieve carbon reduction goals
             </p>
           </div>
         </motion.div>

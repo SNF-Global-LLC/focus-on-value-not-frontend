@@ -20,7 +20,7 @@ const Blog = () => {
         title="carbonfactor.io - News and insights about carbon tracking technology" 
         description="Stay updated with the latest news and insights about carbon tracking, sustainability solutions, and environmental technology from carbonfactor.io."
         imageUrl={featuredPost?.imageUrl || "/lovable-uploads/6b0637e9-4a7b-40d0-b219-c8b7f879f93e.png"}
-        keywords={['smart textiles', 'textile technology', 'industry news', 'sensor innovation', 'wearable tech', 'smart fabrics']}
+        keywords={['manufacturing intelligence', 'carbon tracking', 'industry news', 'sustainability solutions', 'CBAM compliance', 'AWS GenAI']}
         type="website"
       />
       
@@ -88,7 +88,7 @@ const Blog = () => {
             <BlogPostCard 
               key={`placeholder-${index}`}
               title="Upcoming article"
-              excerpt="Stay tuned for more exciting articles about smart textiles and sensor technology."
+              excerpt="Stay tuned for more exciting articles about manufacturing intelligence and carbon optimization solutions."
               imageUrl={index % 2 === 0 ? "/lovable-uploads/6b0637e9-4a7b-40d0-b219-c8b7f879f93e.png" : "/lovable-uploads/700e27d7-0513-4bfa-8ac4-f7fd6087594c.png"}
               date="Coming soon"
               slug="#"
