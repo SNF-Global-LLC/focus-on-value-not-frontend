@@ -16,17 +16,17 @@ const DevelopmentProcess = () => {
   // Process component logic
   const processes = [{
     id: 1,
-    title: "Textile Sensor Design",
+    title: "IoT Real Time Tracking Sensor Design",
     description: "We begin by designing custom textile sensors specifically for your industry and use case, selecting appropriate conductive materials and sensor types.",
     steps: ["Industry-specific requirement analysis", "Sensor type and material selection", "Prototype sensor development", "Initial testing and calibration"]
   }, {
     id: 2,
-    title: "Garment Integration",
+    title: "Trained on real surveillance data of production",
     description: "Our engineering team seamlessly integrates sensors into clothing and footwear while maintaining comfort, durability, and washability.",
     steps: ["Ergonomic placement optimization", "Non-intrusive integration techniques", "Durability and washability testing", "Comfort and user experience validation"]
   }, {
     id: 3,
-    title: "AI & Data Analytics",
+    title: "GenAI & Data Analytics MCP",
     description: "We develop specialized algorithms that transform textile sensor data into actionable insights unique to your industry requirements.",
     steps: ["Industry-specific algorithm development", "ML model training with domain data", "Real-time analytics implementation", "Insight delivery optimization"]
   }, {
