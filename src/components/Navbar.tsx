@@ -50,11 +50,11 @@ const Navbar = () => {
             <NavigationMenu className={cn(isScrolled ? "" : "text-white")}>
               <NavigationMenuList>
                 <NavigationMenuItem>
-                  <Link to="/">
+                  <a href="https://intelfactor.ai/" target="_blank" rel="noopener noreferrer">
                     <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
-                      Home
+                      Intel
                     </NavigationMenuLink>
-                  </Link>
+                  </a>
                 </NavigationMenuItem>
                 
                 <NavigationMenuItem>
