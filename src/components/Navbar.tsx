@@ -95,12 +95,6 @@ const Navbar = () => {
                           <p className="text-sm text-gray-500">End-to-end carbon footprint monitoring</p>
                         </Link>
                       </li>
-                      <li>
-                        <Link to="/projects/pet-tracker" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Pet Activity Counter</div>
-                          <p className="text-sm text-gray-500">Smart collars for pet activity monitoring</p>
-                        </Link>
-                      </li>
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
