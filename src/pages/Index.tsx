@@ -4,6 +4,7 @@ import Hero from '@/components/Hero';
 import Features from '@/components/Features';
 import Projects from '@/components/Projects';
 import WhyCarbonFactor from '@/components/WhyCarbonFactor';
+import BlogPreview from '@/components/BlogPreview';
 import DashboardSection from '@/components/DashboardSection';
 import SEO from '@/components/SEO';
 import { useEffect } from 'react';
@@ -31,6 +32,7 @@ const Index = () => {
       <DashboardSection />
       <WhyCarbonFactor />
       <Projects />
+      <BlogPreview />
     </PageLayout>
   );
 };

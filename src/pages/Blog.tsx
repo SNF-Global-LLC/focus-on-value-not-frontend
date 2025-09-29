@@ -9,27 +9,27 @@ import BlogPostCard from '@/components/BlogPostCard';
 import { blogPosts } from '@/data/blogPosts';
 
 const Blog = () => {
-  // Get the newest blog post for the featured post section (the new post with id '6')
-  const featuredPost = blogPosts.find(post => post.id === '6') || blogPosts[0];
+  // Get the newest blog post for the featured post section (the new post with id '1')
+  const featuredPost = blogPosts.find(post => post.id === '1') || blogPosts[0];
   // Get the rest of the blog posts for the grid section
   const otherPosts = blogPosts.filter(post => post.id !== featuredPost?.id);
   
   return (
     <PageLayout>
       <SEO 
-        title="carbonfactor.io - News and insights about carbon tracking technology" 
-        description="Stay updated with the latest news and insights about carbon tracking, sustainability solutions, and environmental technology from carbonfactor.io."
+        title="SNF Intel - Manufacturing Intelligence & Industry Insights" 
+        description="Stay updated with the latest insights about IoT, robotics, automation, AR/VR training, and manufacturing intelligence from SNF Intel."
         imageUrl={featuredPost?.imageUrl || "/lovable-uploads/6b0637e9-4a7b-40d0-b219-c8b7f879f93e.png"}
-        keywords={['manufacturing intelligence', 'carbon tracking', 'industry news', 'sustainability solutions', 'CBAM compliance', 'AWS GenAI']}
+        keywords={['manufacturing intelligence', 'IoT sensors', 'robotics automation', 'AR VR training', 'worker upskilling', 'smart manufacturing']}
         type="website"
       />
       
       <div className="w-full pt-24 pb-12 bg-gradient-to-b from-black to-gray-900 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">carbonfactor.io News &amp; Insights</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">SNF Intel Manufacturing Insights</h1>
             <p className="text-xl text-gray-300 mb-6">
-              The latest trends and news in sensor-integrated textiles and smart technology
+              The latest in IoT, robotics, automation, AR/VR training, and manufacturing intelligence
             </p>
           </div>
         </div>
@@ -88,7 +88,7 @@ const Blog = () => {
             <BlogPostCard 
               key={`placeholder-${index}`}
               title="Upcoming article"
-              excerpt="Stay tuned for more exciting articles about manufacturing intelligence and carbon optimization solutions."
+              excerpt="Stay tuned for more exciting articles about IoT, robotics, automation, AR/VR training, and manufacturing intelligence."
               imageUrl={index % 2 === 0 ? "/lovable-uploads/6b0637e9-4a7b-40d0-b219-c8b7f879f93e.png" : "/lovable-uploads/700e27d7-0513-4bfa-8ac4-f7fd6087594c.png"}
               date="Coming soon"
               slug="#"

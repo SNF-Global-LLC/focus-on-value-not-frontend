@@ -33,587 +33,500 @@ export interface ContentSection {
 
 export const blogPosts: BlogPost[] = [
   {
-    id: '6',
-    title: 'Wearable Safety Tech: Protecting Workers While Delivering Real ROI',
-    slug: 'wearable-safety-tech-protecting-workers-roi',
-    excerpt: 'Discover how wearable safety technology puts worker wellbeing first while delivering measurable business benefits through injury prevention and enhanced workplace safety.',
-    date: 'June 12, 2025',
-    author: 'carbonfactor.io',
-    category: 'Business',
+    id: '1',
+    title: 'AR/VR Training Revolution: Transforming Manufacturing Workforce Development',
+    slug: 'ar-vr-training-manufacturing-workforce',
+    excerpt: 'Discover how augmented reality and virtual reality technologies are revolutionizing manufacturing training, enabling immersive skill development and reducing onboarding time by up to 75%.',
+    date: 'December 20, 2024',
+    author: 'SNF Intel',
+    category: 'Training & Education',
     imageUrl: '/lovable-uploads/078a129e-0f98-4d91-af61-873687db1a04.png',
     keywords: [
-      'wearable safety technology',
-      'workplace injury prevention',
-      'worker safety',
-      'safety ROI',
-      'ergonomic sensors',
-      'workplace safety investment',
-      'industrial wearables',
-      'occupational safety',
-      'safety technology partnerships',
-      'worker protection',
-      'safety innovation',
-      'workplace wellbeing'
+      'AR training',
+      'VR manufacturing',
+      'workforce development',
+      'immersive training',
+      'skill development',
+      'manufacturing education',
+      'virtual reality training',
+      'augmented reality',
+      'worker upskilling',
+      'industrial training',
+      'digital learning'
     ],
-    metaDescription: 'Learn how wearable safety technology prioritizes worker protection while delivering proven business benefits. Real data shows significant injury reduction and improved workplace safety.',
+    metaDescription: 'Learn how AR/VR technologies are transforming manufacturing training and workforce development with immersive, hands-on learning experiences.',
     content: [
       {
         type: 'paragraph',
-        content: 'Every worker deserves to go home safe at the end of their shift. That fundamental principle drives the evolution of workplace safety technology, where protecting people has always been the primary goal. What\'s remarkable about today\'s wearable safety technology is how it achieves this mission while also delivering tangible business benefits.'
+        content: 'The manufacturing industry is experiencing a paradigm shift in workforce training through augmented reality (AR) and virtual reality (VR) technologies. These immersive technologies are transforming how workers learn complex manufacturing processes, safety protocols, and equipment operation.'
       },
       {
         type: 'stats',
         statsData: [
           {
-            value: '2.2',
-            label: 'Workplace injuries per 100 workers annually',
-            icon: 'Users'
+            value: '75%',
+            label: 'Reduction in training time with VR/AR',
+            icon: 'Clock'
           },
           {
-            value: '$43K',
-            label: 'Average cost per medically consulted injury',
-            icon: 'DollarSign'
+            value: '90%',
+            label: 'Knowledge retention improvement',
+            icon: 'Brain'
           },
           {
-            value: '58%',
-            label: 'Injury reduction reported by early adopters',
-            icon: 'TrendingUp'
+            value: '60%',
+            label: 'Decrease in training-related injuries',
+            icon: 'Shield'
           }
         ]
       },
       {
         type: 'heading',
-        content: 'The Human Cost Behind the Numbers'
+        content: 'The Immersive Training Advantage'
       },
       {
         type: 'paragraph',
-        content: 'Behind every workplace injury statistic is a person: someone\'s parent, partner, or child. The data tells a sobering story about workplace safety in America. When we can prevent injuries before they happen, we\'re not just protecting company assets. We\'re preserving families and communities.'
-      },
-      {
-        type: 'heading',
-        content: 'Real Results from Wearable Safety Technology'
-      },
-      {
-        type: 'paragraph',
-        content: 'The effectiveness of wearable safety technology becomes clear when we examine documented case studies and vendor-reported results. These implementations show real workers in demanding environments using technology that helps them stay safe while doing their jobs effectively.'
+        content: 'Traditional manufacturing training often relies on theoretical learning followed by hands-on practice with expensive equipment. AR/VR training provides a safe, cost-effective environment where workers can practice complex procedures repeatedly without material waste or safety risks.'
       },
       {
         type: 'subheading',
-        content: 'Documented Industry Results'
+        content: 'Key Benefits of AR/VR Training'
       },
       {
         type: 'icon-list',
         items: [
-          'Companies report significant reductions in workplace injuries with consistent wearable device usage',
-          'Workers feel more confident and supported knowing technology is monitoring their safety',
-          'Safety managers gain real-time insights into workplace hazards and risk patterns',
-          'Insurance providers recognize the value with bundled policies for high-adoption organizations'
+          'Safe practice environment with zero risk of injury or equipment damage',
+          'Standardized training experiences ensuring consistent skill development',
+          'Real-time performance analytics and personalized feedback',
+          'Cost reduction through elimination of physical training materials'
         ]
       },
       {
         type: 'heading',
-        content: 'When Safety and Business Align'
-      },
-      {
-        type: 'paragraph',
-        content: 'Effective safety technology creates a virtuous cycle where prioritizing people leads to positive business outcomes. When injuries decrease, so do workers\' compensation claims, replacement worker costs, and operational disruptions.'
-      },
-      {
-        type: 'table',
-        tableData: {
-          headers: ['Safety Outcome', 'Human Impact', 'Business Benefit'],
-          rows: [
-            ['Fewer back injuries', 'Workers maintain mobility and quality of life', 'Reduced comp claims and medical costs'],
-            ['Better ergonomic awareness', 'Less fatigue and chronic pain', 'Higher productivity and retention'],
-            ['Early hazard detection', 'Prevention of serious accidents', 'Avoided downtime and investigations'],
-            ['Real-time feedback', 'Workers feel supported and valued', 'Improved safety culture and morale']
-          ]
-        }
-      },
-      {
-        type: 'heading',
-        content: 'Growing Market for Worker-Centered Safety'
-      },
-      {
-        type: 'paragraph',
-        content: 'The market for wearable safety technology is expanding rapidly, reflecting a cultural shift toward prioritizing worker safety and wellbeing. Technology serves as an enabler rather than a replacement for human judgment and care.'
-      },
-      {
-        type: 'paragraph',
-        content: 'Industry analysts project substantial growth in the wearable safety market over the coming years. Starting from a market value of $1.6 billion in 2023, the sector is expected to grow steadily to $2.1 billion in 2024, reaching $2.7 billion by 2025. This growth trajectory continues with projections of $3.3 billion in 2026, $3.8 billion in 2027, and $4.2 billion by 2028. This expansion reflects increasing organizational commitment to worker safety and the proven value of wearable safety solutions.'
-      },
-      {
-        type: 'heading',
-        content: 'How carbonfactor.io Supports Your Safety Mission'
-      },
-      {
-        type: 'paragraph',
-        content: 'We understand that every organization\'s safety challenges are unique. That\'s why we\'ve built a flexible platform that can adapt to your specific needs while maintaining our core focus on worker protection.'
+        content: 'Real-World Applications'
       },
       {
         type: 'subheading',
-        content: 'Our Collaborative Approach'
+        content: 'Assembly Line Training'
       },
       {
-        type: 'icon-list',
-        items: [
-          'Flexible integration that works with your existing safety programs and doesn\'t disrupt worker routines',
-          'White-label solutions that let you maintain your brand identity while providing cutting-edge safety technology',
-          'Proven supply chain partnerships that ensure reliable, high-quality components for long-term deployment',
-          'Data insights that help you understand and improve your safety culture, not just track compliance metrics'
-        ]
+        type: 'paragraph',
+        content: 'VR simulations allow workers to practice complex assembly procedures in a virtual environment that perfectly replicates the actual production line. This enables mastery of timing, sequence, and quality control without disrupting production.'
+      },
+      {
+        type: 'subheading',
+        content: 'Equipment Operation and Maintenance'
+      },
+      {
+        type: 'paragraph',
+        content: 'AR overlays provide step-by-step guidance for equipment maintenance and troubleshooting directly on the actual machinery, reducing errors and improving maintenance efficiency.'
       },
       {
         type: 'heading',
-        content: 'Start the Conversation'
+        content: 'The Future of Manufacturing Education'
       },
       {
         type: 'paragraph',
-        content: 'We\'d love to learn about your safety goals and specific challenges. Whether you\'re looking to reduce particular types of injuries, improve safety culture, or explore how technology can support your existing programs, we\'re here to listen and collaborate.'
-      },
-      {
-        type: 'paragraph',
-        content: 'Bring your organization\'s injury and loss data, and we\'ll work together to calculate potential benefits using your actual numbers. We can help you explore how wearable technology might fit into your comprehensive safety strategy. No hard sell, no one-size-fits-all solutions: just an honest conversation about protecting the people who make your organization successful.'
+        content: 'As AR/VR technologies continue to evolve, we can expect even more sophisticated training experiences that adapt to individual learning styles and provide predictive guidance for complex manufacturing scenarios.'
       },
       {
         type: 'quote',
-        content: 'Great safety partnerships start with shared values: putting workers first, building trust through transparency, and believing that everyone deserves to work in an environment where they can thrive safely.'
-      },
-      {
-        type: 'heading',
-        content: 'Sources and References'
-      },
-      {
-        type: 'bibliography',
-        items: [
-          'National Safety Council, Work Injury Costs, Injury Facts, 2024 edition. Available at: injuryfacts.nsc.org',
-          'US Bureau of Labor Statistics, Employer-Reported Workplace Injuries and Illnesses, 2023, Table 1. Available at: bls.gov',
-          'Occupational Safety and Health Administration, Safety Pays Individual Injury Estimator. Available at: osha.gov',
-          'Digi International, "Kinetic Creates an Innovative Wearable That Reduces Workplace Injuries," customer story, 2024. Available at: digi.com',
-          '"Want Wearable Tech With That Workers\' Comp Policy?" Insurance Journal, 2021. Available at: insurancejournal.com',
-          '"Nationwide, Kinetic Team on Wearable Workplace Safety Technology," Carrier Management, 2021. Available at: carriermanagement.com',
-          'Markets and Markets, "Wearable Sensors Market Size, Share, Industry Report," 2024 update. Available at: marketsandmarkets.com'
-        ]
-      }
-    ]
-  },
-  {
-    id: '5',
-    title: 'Smart PPE Revolution: How Safety Technology is Transforming Worker Protection',
-    slug: 'smart-ppe-revolution-safety-technology',
-    excerpt: 'Discover how smart textiles and sensor technology are revolutionizing personal protective equipment, creating safer workplaces and preventing accidents before they happen.',
-    date: 'June 5, 2025',
-    author: 'carbonfactor.io',
-    category: 'Innovation',
-    imageUrl: '/lovable-uploads/927dae7e-6aaf-4b76-add2-1287a1dd9dc0.png',
-    keywords: [
-      'smart PPE',
-      'safety technology',
-      'personal protective equipment',
-      'smart textiles',
-      'workplace safety',
-      'wearable sensors',
-      'construction safety',
-      'industrial IoT',
-      'worker protection',
-      'safety monitoring',
-      'smart helmets',
-      'connected safety gear',
-      'occupational safety',
-      'safety innovation',
-      'protective equipment technology'
-    ],
-    metaDescription: 'Learn how smart PPE with integrated sensors is revolutionizing workplace safety. Discover the latest innovations in intelligent personal protective equipment that prevent accidents and save lives.',
-    content: [
-      {
-        type: 'paragraph',
-        content: 'The realm of personal protective equipment (PPE) is undergoing a significant transformation, driven by advancements in smart textiles and sensor technology. Traditional PPE, designed as a passive barrier against workplace hazards, is evolving into intelligent, interconnected systems that actively monitor conditions and provide real-time alerts. This shift is creating safer work environments and preventing accidents before they occur.'
-      },
-      {
-        type: 'heading',
-        content: 'The Evolution of PPE: From Passive to Proactive'
-      },
-      {
-        type: 'paragraph',
-        content: 'For decades, PPE has primarily served as a last line of defense, offering limited protection and often failing to address the underlying causes of accidents. However, the integration of smart technology is enabling a proactive approach to safety, where PPE not only protects but also anticipates and mitigates risks.'
-      },
-      {
-        type: 'subheading',
-        content: 'Key Components of Smart PPE'
-      },
-      {
-        type: 'list',
-        items: [
-          'Embedded Sensors: Detecting environmental conditions, physiological parameters, and potential hazards.',
-          'Connectivity: Enabling real-time data transmission and communication between workers, supervisors, and emergency responders.',
-          'Data Analytics: Providing insights into worker performance, risk factors, and safety trends.',
-          'Alert Systems: Triggering automated warnings and notifications to prevent accidents and ensure timely intervention.'
-        ]
-      },
-      {
-        type: 'heading',
-        content: 'Real-World Applications of Smart PPE'
-      },
-      {
-        type: 'subheading',
-        content: 'Construction Industry'
-      },
-      {
-        type: 'paragraph',
-        content: 'In construction, smart helmets equipped with sensors can detect falls, monitor head impacts, and alert emergency services. Smart vests can track worker location, monitor vital signs, and detect exposure to hazardous substances.'
-      },
-      {
-        type: 'subheading',
-        content: 'Manufacturing Sector'
-      },
-      {
-        type: 'paragraph',
-        content: 'In manufacturing, smart gloves can provide real-time feedback on worker movements, preventing repetitive strain injuries. Smart eyewear can offer augmented reality overlays, guiding workers through complex tasks and reducing errors.'
-      },
-      {
-        type: 'subheading',
-        content: 'Healthcare Environment'
-      },
-      {
-        type: 'paragraph',
-        content: 'In healthcare, smart gowns can monitor patient vital signs, detect infections, and alert medical staff. Smart masks can track air quality, filter out harmful particles, and provide real-time feedback on respiratory function.'
-      },
-      {
-        type: 'heading',
-        content: 'The Future of Worker Protection'
-      },
-      {
-        type: 'paragraph',
-        content: 'As technology continues to advance, smart PPE is poised to become an indispensable tool for ensuring worker safety and well-being. By providing real-time data, automated alerts, and proactive risk mitigation, smart PPE is transforming the way we approach safety in the workplace.'
-      },
-      {
-        type: 'quote',
-        content: 'Smart PPE is not just about protecting workers; it\'s about empowering them with the knowledge and tools they need to stay safe and productive.'
-      }
-    ]
-  },
-  {
-    id: '4',
-    title: 'Leveraging Sensor Technology in Product Development: A Strategic Approach',
-    slug: 'leveraging-sensor-technology-product-development',
-    excerpt: 'Explore how sensor technology is revolutionizing product development across industries, from smart textiles to IoT devices, and learn strategic approaches for implementation.',
-    date: 'May 8, 2025',
-    author: 'carbonfactor.io',
-    category: 'Technology',
-    imageUrl: '/lovable-uploads/6b0637e9-4a7b-40d0-b219-c8b7f879f93e.png',
-    keywords: [
-      'sensor technology',
-      'product development',
-      'smart textiles',
-      'IoT sensors',
-      'wearable technology',
-      'textile sensors',
-      'manufacturing innovation',
-      'embedded sensors',
-      'smart fabrics',
-      'sensor integration'
-    ],
-    metaDescription: 'Discover how sensor technology is transforming product development. Learn strategic approaches for integrating sensors into textiles and manufacturing processes.',
-    content: [
-      {
-        type: 'paragraph',
-        content: 'Sensor technology is rapidly transforming product development across various industries. From smart textiles that monitor vital signs to IoT devices that automate home functions, sensors are enabling a new era of intelligent and responsive products. This article explores how businesses can strategically leverage sensor technology to enhance their product development processes.'
-      },
-      {
-        type: 'heading',
-        content: 'The Shift from Manual Testing to Sensor-Driven Insights'
-      },
-      {
-        type: 'paragraph',
-        content: 'Traditional product development often relies on manual testing and subjective feedback, which can be time-consuming and prone to errors. Sensor technology offers a more objective and data-driven approach, providing real-time insights into product performance and user behavior. By embedding sensors into prototypes and early-stage products, developers can gather valuable data on usage patterns, environmental conditions, and potential failure points.'
-      },
-      {
-        type: 'subheading',
-        content: 'Key Benefits of Sensor Integration'
-      },
-      {
-        type: 'list',
-        items: [
-          'Real-time Performance Measurement: Sensors provide continuous data on product performance, allowing developers to identify and address issues quickly.',
-          'Automated Testing: Sensors can automate testing processes, reducing the need for manual intervention and accelerating development cycles.',
-          'Data-Driven Insights: Sensor data provides valuable insights into user behavior, enabling developers to optimize product design and functionality.',
-          'Predictive Maintenance: Sensors can detect early signs of wear and tear, allowing for proactive maintenance and preventing costly downtime.'
-        ]
-      },
-      {
-        type: 'heading',
-        content: 'Real-time Performance Measurement Made Easy'
-      },
-      {
-        type: 'paragraph',
-        content: 'One of the most significant advantages of sensor technology is its ability to provide real-time performance measurement. By embedding sensors into products, developers can continuously monitor key metrics such as temperature, pressure, vibration, and strain. This data can be used to identify potential issues, optimize product performance, and ensure that products meet design specifications.'
-      },
-      {
-        type: 'heading',
-        content: 'Faster Iterations Through Automated Testing and AI'
-      },
-      {
-        type: 'paragraph',
-        content: 'Sensor technology can also be used to automate testing processes, reducing the need for manual intervention and accelerating development cycles. By integrating sensors with AI algorithms, developers can create intelligent testing systems that automatically identify and diagnose issues. These systems can also be used to predict product failures, allowing for proactive maintenance and preventing costly downtime.'
-      },
-      {
-        type: 'heading',
-        content: 'Key Business Benefits'
-      },
-      {
-        type: 'table',
-        tableData: {
-          headers: ['Industry', 'Challenge', 'Sensor Solution'],
-          rows: [
-            ['Construction', 'Monitoring worker safety on construction sites', 'Wearable sensors that detect falls, monitor vital signs, and alert emergency services.'],
-            ['Manufacturing', 'Preventing equipment failures in manufacturing plants', 'Embedded sensors that monitor equipment performance, detect early signs of wear and tear, and trigger maintenance alerts.'],
-            ['Healthcare', 'Monitoring patient health in hospitals and clinics', 'Wearable sensors that track vital signs, detect infections, and alert medical staff.'],
-          ],
-        },
-      },
-      {
-        type: 'heading',
-        content: 'Ready to Transform Your Product Development?'
-      },
-      {
-        type: 'paragraph',
-        content: 'Sensor technology is revolutionizing product development across industries, offering a more objective, data-driven, and efficient approach. By strategically leveraging sensor technology, businesses can enhance their product development processes, improve product performance, and gain a competitive edge.'
-      },
-    ]
-  },
-  {
-    id: '3',
-    title: 'From Idea to Launch: Our Smart Product Development Process',
-    slug: 'from-idea-to-launch-development-process',
-    excerpt: 'Take a behind-the-scenes look at how carbonfactor.io transforms ideas into market-ready sustainability solutions through our proven development process.',
-    date: 'May 15, 2025',
-    author: 'carbonfactor.io',
-    category: 'Process',
-    imageUrl: '/lovable-uploads/5262afdb-dd24-4d5e-be66-7c6717adbca9.png',
-    keywords: [
-      'product development',
-      'smart product design',
-      'development process',
-      'prototyping',
-      'manufacturing',
-      'product launch',
-      'innovation process',
-      'textile development',
-      'smart textiles'
-    ],
-    metaDescription: 'Learn about carbonfactor.io proven process for developing sustainability solutions from initial concept to market launch. Discover how we turn ideas into reality.',
-    content: [
-      {
-        type: 'paragraph',
-        content: 'At carbonfactor.io, we simplify the journey from an idea to a finished sustainability solution. Whether you\'re starting from scratch or already have a clear concept ready to scale, we\'re here to support you exactly where you need us.'
-      },
-      {
-        type: 'paragraph',
-        content: 'Let\'s walk through our process with an example: Imagine you come to us with the idea of a smart glove. This glove automatically senses the outside temperature and adjusts its own warmth accordingly. It also connects to an app where you can control settings and view temperature information.'
-      },
-      {
-        type: 'heading',
-        content: 'Step 1: Understanding Your Idea'
-      },
-      {
-        type: 'paragraph',
-        content: 'It all starts with a clear conversation. When you bring us your glove idea, we first meet to fully understand your vision and requirements. We\'ll discuss key points: What problem does the product solve? Who will use it? After that, we set a clear and practical roadmap.'
-      },
-      {
-        type: 'paragraph',
-        content: 'If you already have a basic prototype or idea, we\'ll quickly identify how we can help scale it effectively.'
-      },
-      {
-        type: 'heading',
-        content: 'Step 2: Building the First Prototype'
-      },
-      {
-        type: 'paragraph',
-        content: 'Once the plan is set, our team moves quickly to develop the first working prototype. For your smart glove, we design temperature sensors, heating elements, electronics, and the companion app to work seamlessly together.'
-      },
-      {
-        type: 'paragraph',
-        content: 'We use rapid prototyping techniques like 3D printing and quick electronics integration. Within weeks, you get a tangible product to test and gather feedback.'
-      },
-      {
-        type: 'heading',
-        content: 'Step 3: Testing & Refinement'
-      },
-      {
-        type: 'paragraph',
-        content: 'With your prototype ready, we jump into testing. You\'ll evaluate the glove under real-world conditions to identify improvements. Together, we\'ll adjust designs, optimize the heating response, enhance the app, and retest frequently.'
-      },
-      {
-        type: 'paragraph',
-        content: 'This process is quick, iterative, and practical, bringing you closer to a reliable, user-friendly product.'
-      },
-      {
-        type: 'heading',
-        content: 'Step 4: Preparing for Production'
-      },
-      {
-        type: 'paragraph',
-        content: 'Next, we prepare the glove for large-scale manufacturing. We refine the design for efficient production, select reliable components, and ensure quality at scale.'
-      },
-      {
-        type: 'paragraph',
-        content: 'If you already have a manufacturing partner, we\'ll work closely with them. If not, we\'ll help you find the best production solution. In either case, we\'ll integrate the technology smoothly into the production process.'
-      },
-      {
-        type: 'heading',
-        content: 'Step 5: Product Launch'
-      },
-      {
-        type: 'paragraph',
-        content: 'Finally, it\'s launch day. You introduce your sustainability solution, thoroughly tested and production-ready, to the market. carbonfactor.io provides ongoing support to ensure a smooth launch—from technical documentation to supporting the platform\'s release.'
-      },
-      {
-        type: 'heading',
-        content: 'Why Choose carbonfactor.io?'
-      },
-      {
-        type: 'paragraph',
-        content: 'Developing smart products can be complex, but we make it simple. Clients choose us because:'
-      },
-      {
-        type: 'list',
-        items: [
-          'Clear Process: Simple steps, clear timelines, and reduced risks.',
-          'Speed & Flexibility: Rapid prototyping and agile iterations get your product to market faster.',
-          'Comprehensive Expertise: Hardware, software, and design experts under one roof.',
-          'Practical Results: Real-world testing ensures your final product meets user needs.'
-        ]
-      },
-      {
-        type: 'paragraph',
-        content: 'Have an idea or ready to scale an existing product? We\'d love to hear from you and help bring your vision to life. Reach out and let\'s get started!'
+        content: 'The integration of AR/VR in manufacturing training is not just about technology adoption; it\'s about empowering workers with the skills and confidence needed for the factory of the future.'
       }
     ]
   },
   {
     id: '2',
-    title: 'AI-Powered Uniforms: The Future of Emergency Response and Worker Safety',
-    slug: 'ai-powered-uniforms-emergency-alerts',
-    excerpt: 'Explore how AI-integrated uniforms are revolutionizing emergency response by providing real-time health monitoring and automated alert systems for first responders and industrial workers.',
-    date: 'May 8, 2025',
-    author: 'carbonfactor.io',
-    category: 'Innovation',
-    imageUrl: '/lovable-uploads/4187f423-ba69-4043-be76-c43098488348.png',
+    title: 'IoT Sensors: The Backbone of Smart Manufacturing Intelligence',
+    slug: 'iot-sensors-smart-manufacturing-intelligence',
+    excerpt: 'Explore how IoT sensors are creating intelligent manufacturing ecosystems, enabling predictive maintenance, real-time quality control, and data-driven decision making.',
+    date: 'December 15, 2024',
+    author: 'SNF Intel',
+    category: 'IoT & Sensors',
+    imageUrl: '/lovable-uploads/927dae7e-6aaf-4b76-add2-1287a1dd9dc0.png',
     keywords: [
-      'AI uniforms',
-      'emergency response',
-      'worker safety',
-      'smart uniforms',
-      'health monitoring',
-      'first responders',
-      'safety technology',
-      'wearable AI'
+      'IoT sensors',
+      'smart manufacturing',
+      'predictive maintenance',
+      'industrial IoT',
+      'manufacturing intelligence',
+      'sensor networks',
+      'real-time monitoring',
+      'data analytics',
+      'Industry 4.0',
+      'connected factory'
     ],
-    metaDescription: 'Discover how AI-powered uniforms are transforming emergency response and worker safety with real-time monitoring and automated alerts.',
+    metaDescription: 'Discover how IoT sensors are revolutionizing manufacturing with predictive maintenance, quality control, and intelligent automation.',
     content: [
       {
         type: 'paragraph',
-        content: 'The integration of artificial intelligence (AI) into everyday workwear is no longer a futuristic concept but a rapidly evolving reality. AI-powered uniforms are poised to revolutionize emergency response and worker safety by providing real-time health monitoring and automated alert systems for first responders and industrial workers.'
+        content: 'Internet of Things (IoT) sensors are revolutionizing manufacturing by creating interconnected, intelligent production environments. These sensors collect vast amounts of real-time data that enable manufacturers to optimize operations, predict failures, and maintain consistent quality.'
       },
       {
         type: 'heading',
-        content: 'The Convergence of AI and Wearable Technology'
+        content: 'The IoT Sensor Ecosystem'
       },
       {
         type: 'paragraph',
-        content: 'The convergence of AI and wearable technology has paved the way for the development of smart uniforms capable of collecting and analyzing vast amounts of data. These uniforms are equipped with an array of sensors that monitor vital signs, environmental conditions, and potential hazards.'
+        content: 'Modern manufacturing facilities deploy thousands of sensors across production lines, monitoring everything from temperature and vibration to product quality and worker safety. This sensor network creates a digital twin of the physical manufacturing process.'
       },
       {
-        type: 'subheading',
-        content: 'Key Features of AI-Powered Uniforms'
+        type: 'table',
+        tableData: {
+          headers: ['Sensor Type', 'Application', 'Key Benefits'],
+          rows: [
+            ['Temperature Sensors', 'Process monitoring and control', 'Prevent overheating, ensure quality'],
+            ['Vibration Sensors', 'Equipment health monitoring', 'Predict bearing failures, reduce downtime'],
+            ['Pressure Sensors', 'Hydraulic and pneumatic systems', 'Optimize performance, prevent leaks'],
+            ['Vision Sensors', 'Quality inspection', 'Automated defect detection, reduce waste']
+          ]
+        }
       },
       {
-        type: 'list',
-        items: [
-          'Real-time Health Monitoring: AI-powered uniforms continuously monitor vital signs such as heart rate, body temperature, and blood pressure, providing early warnings of potential health issues.',
-          'Automated Alert Systems: In the event of a medical emergency or hazardous situation, AI-powered uniforms can automatically alert emergency responders, providing critical information about the worker\'s location and condition.',
-          'Environmental Monitoring: AI-powered uniforms can detect exposure to hazardous substances, such as toxic gases or radiation, and provide real-time alerts to workers and supervisors.',
-          'Performance Optimization: AI-powered uniforms can track worker movements and provide feedback on posture and ergonomics, helping to prevent injuries and improve performance.'
+        type: 'heading',
+        content: 'Predictive Maintenance Revolution'
+      },
+      {
+        type: 'paragraph',
+        content: 'IoT sensors enable predictive maintenance by continuously monitoring equipment health indicators. Machine learning algorithms analyze sensor data to predict when maintenance is needed, preventing unexpected failures and optimizing maintenance schedules.'
+      },
+      {
+        type: 'stats',
+        statsData: [
+          {
+            value: '25%',
+            label: 'Reduction in maintenance costs',
+            icon: 'DollarSign'
+          },
+          {
+            value: '70%',
+            label: 'Decrease in unplanned downtime',
+            icon: 'TrendingDown'
+          },
+          {
+            value: '10%',
+            label: 'Extension in equipment lifespan',
+            icon: 'Clock'
+          }
         ]
       },
       {
         type: 'heading',
-        content: 'Transforming Emergency Response'
+        content: 'Real-Time Quality Control'
       },
       {
         type: 'paragraph',
-        content: 'AI-powered uniforms are particularly valuable in emergency response scenarios, where time is of the essence. By providing real-time health monitoring and automated alert systems, these uniforms can help first responders quickly identify and address medical emergencies, potentially saving lives.'
-      },
-      {
-        type: 'heading',
-        content: 'Enhancing Worker Safety'
-      },
-      {
-        type: 'paragraph',
-        content: 'AI-powered uniforms can also play a crucial role in enhancing worker safety in industrial settings. By monitoring environmental conditions and worker movements, these uniforms can help prevent accidents and injuries, creating a safer and more productive work environment.'
+        content: 'IoT sensors enable continuous quality monitoring throughout the production process. Instead of relying on batch testing, manufacturers can detect quality issues in real-time and make immediate adjustments to prevent defective products.'
       },
       {
         type: 'quote',
-        content: 'AI-powered uniforms are not just about protecting workers; they\'re about empowering them with the knowledge and tools they need to stay safe and healthy.'
+        content: 'IoT sensors transform manufacturing from reactive to proactive, enabling intelligent decisions based on real-time data rather than historical assumptions.'
       }
     ]
   },
   {
-    id: '1',
-    title: 'The Rise of Sensor-Integrated Textiles: A New Era in Smart Manufacturing',
-    slug: 'sensor-integrated-textiles-trend',
-    excerpt: 'Discover how sensor-integrated textiles are transforming industries from healthcare to manufacturing, creating new possibilities for smart, responsive products.',
-    date: 'May 2, 2025',
-    author: 'carbonfactor.io',
-    category: 'Technology',
-    imageUrl: '/lovable-uploads/48ecf6e2-5a98-4a9d-af6f-ae2265cd4098.png',
+    id: '3',
+    title: 'Robotics and Automation: Upskilling Workers for Collaborative Manufacturing',
+    slug: 'robotics-automation-upskilling-collaborative-manufacturing',
+    excerpt: 'Learn how modern robotics and automation technologies are creating new opportunities for worker upskilling and human-robot collaboration in manufacturing.',
+    date: 'December 10, 2024',
+    author: 'SNF Intel',
+    category: 'Robotics & Automation',
+    imageUrl: '/lovable-uploads/6b0637e9-4a7b-40d0-b219-c8b7f879f93e.png',
     keywords: [
-      'smart textiles',
-      'sensor integration',
-      'smart manufacturing',
-      'wearable technology',
-      'textile innovation',
-      'smart fabrics',
-      'textile sensors'
+      'collaborative robotics',
+      'worker upskilling',
+      'human-robot collaboration',
+      'automation training',
+      'cobots',
+      'manufacturing automation',
+      'workforce development',
+      'robot programming',
+      'industrial automation',
+      'skill transformation'
     ],
-    metaDescription: 'Learn about the revolutionary trend of sensor-integrated textiles and how they are creating new possibilities in smart manufacturing.',
+    metaDescription: 'Discover how robotics and automation are creating new opportunities for worker upskilling and collaborative manufacturing.',
     content: [
       {
         type: 'paragraph',
-        content: 'Sensor-integrated textiles are rapidly emerging as a transformative technology, poised to revolutionize industries ranging from healthcare to manufacturing. By seamlessly embedding sensors into fabrics, these innovative textiles are creating new possibilities for smart, responsive products that can monitor vital signs, track performance, and enhance safety.'
+        content: 'The rise of robotics and automation in manufacturing is not replacing human workers but transforming their roles. Modern collaborative robots (cobots) work alongside humans, requiring new skills and creating opportunities for workforce advancement.'
       },
       {
         type: 'heading',
-        content: 'The Convergence of Textiles and Technology'
+        content: 'The Collaborative Robot Revolution'
       },
       {
         type: 'paragraph',
-        content: 'The convergence of textiles and technology has led to the development of sensor-integrated textiles, which combine the comfort and flexibility of fabrics with the intelligence and connectivity of sensors. These textiles are created by weaving or knitting sensors directly into the fabric structure, allowing them to conform to the body and provide continuous, real-time data.'
+        content: 'Collaborative robots are designed to work safely alongside humans, combining the precision and consistency of automation with human creativity and problem-solving abilities. This partnership requires workers to develop new technical skills while leveraging their existing expertise.'
       },
       {
         type: 'subheading',
-        content: 'Key Applications of Sensor-Integrated Textiles'
+        content: 'Key Areas for Worker Upskilling'
       },
       {
-        type: 'list',
+        type: 'icon-list',
         items: [
-          'Healthcare: Sensor-integrated textiles can monitor vital signs such as heart rate, body temperature, and blood pressure, providing early warnings of potential health issues.',
-          'Manufacturing: Sensor-integrated textiles can monitor carbon emissions in real-time, tracking production metrics such as energy consumption, material usage, and waste output, helping manufacturers optimize their sustainability practices and reduce environmental impact.',
-          'Safety: Sensor-integrated textiles can detect exposure to hazardous substances, such as toxic gases or radiation, providing real-time alerts to workers and supervisors.',
-          'Fashion: Sensor-integrated textiles can create interactive and responsive garments that change color, shape, or function based on the wearer\'s movements or environment.'
+          'Robot programming and configuration using intuitive interfaces',
+          'Data analysis and interpretation for process optimization',
+          'Predictive maintenance and troubleshooting of automated systems',
+          'Quality control and exception handling in automated processes'
         ]
       },
       {
         type: 'heading',
-        content: 'Transforming Industries'
+        content: 'Training Programs for the Automated Future'
       },
       {
         type: 'paragraph',
-        content: 'Sensor-integrated textiles are poised to transform a wide range of industries, creating new possibilities for smart, responsive products that enhance health, safety, and performance. As the technology continues to evolve, we can expect to see even more innovative applications emerge, further blurring the lines between textiles and technology.'
+        content: 'Successful automation implementation requires comprehensive training programs that help workers transition from manual operations to collaborative automation. These programs focus on both technical skills and adaptive thinking.'
+      },
+      {
+        type: 'table',
+        tableData: {
+          headers: ['Training Focus', 'Duration', 'Outcome'],
+          rows: [
+            ['Basic Robot Operation', '2-4 weeks', 'Ability to operate and monitor cobots'],
+            ['Robot Programming', '6-8 weeks', 'Create and modify robot programs'],
+            ['Data Analytics', '4-6 weeks', 'Interpret automation data for optimization'],
+            ['Advanced Troubleshooting', '8-10 weeks', 'Diagnose and resolve complex issues']
+          ]
+        }
+      },
+      {
+        type: 'heading',
+        content: 'The Human Advantage in Automated Environments'
+      },
+      {
+        type: 'paragraph',
+        content: 'While robots excel at repetitive tasks, humans provide critical value in areas such as creative problem-solving, quality judgment, and process improvement. The most successful manufacturers invest in developing these uniquely human capabilities.'
+      },
+      {
+        type: 'stats',
+        statsData: [
+          {
+            value: '40%',
+            label: 'Increase in job satisfaction with cobot collaboration',
+            icon: 'Smile'
+          },
+          {
+            value: '30%',
+            label: 'Improvement in skill development opportunities',
+            icon: 'TrendingUp'
+          },
+          {
+            value: '50%',
+            label: 'Reduction in repetitive strain injuries',
+            icon: 'Shield'
+          }
+        ]
       },
       {
         type: 'quote',
-        content: 'Sensor-integrated textiles are not just about creating smart fabrics; they\'re about creating a new era of smart manufacturing, where textiles are seamlessly integrated with technology to enhance our lives.'
+        content: 'The future of manufacturing is not human versus robot, but human with robot - a collaboration that amplifies the strengths of both.'
+      }
+    ]
+  },
+  {
+    id: '4',
+    title: 'Digital Twin Technology: Bridging Physical and Virtual Manufacturing',
+    slug: 'digital-twin-technology-manufacturing',
+    excerpt: 'Explore how digital twin technology creates virtual replicas of manufacturing processes, enabling simulation, optimization, and predictive insights.',
+    date: 'December 5, 2024',
+    author: 'SNF Intel',
+    category: 'Digital Innovation',
+    imageUrl: '/lovable-uploads/5463c9c5-0946-4280-a14b-17636ff69a98.png',
+    keywords: [
+      'digital twin',
+      'virtual manufacturing',
+      'simulation technology',
+      'process optimization',
+      'predictive modeling',
+      'manufacturing simulation',
+      'virtual reality',
+      'IoT integration',
+      'data visualization',
+      'smart factory'
+    ],
+    metaDescription: 'Learn how digital twin technology creates virtual manufacturing replicas for optimization, simulation, and predictive insights.',
+    content: [
+      {
+        type: 'paragraph',
+        content: 'Digital twin technology creates virtual replicas of physical manufacturing processes, equipment, and entire production lines. These digital models enable manufacturers to simulate, analyze, and optimize operations in a virtual environment before implementing changes in the real world.'
+      },
+      {
+        type: 'heading',
+        content: 'Understanding Digital Twins'
+      },
+      {
+        type: 'paragraph',
+        content: 'A digital twin is more than just a 3D model or simulation. It\'s a dynamic, real-time digital representation that continuously updates based on data from IoT sensors, connecting the physical and virtual worlds in unprecedented ways.'
+      },
+      {
+        type: 'subheading',
+        content: 'Components of a Manufacturing Digital Twin'
+      },
+      {
+        type: 'list',
+        items: [
+          'Real-time data integration from IoT sensors and production systems',
+          'Physics-based modeling and simulation capabilities',
+          'Machine learning algorithms for predictive analytics',
+          'Visualization interfaces for human interaction and decision-making'
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Applications in Manufacturing'
+      },
+      {
+        type: 'subheading',
+        content: 'Process Optimization'
+      },
+      {
+        type: 'paragraph',
+        content: 'Digital twins enable manufacturers to test different production scenarios, optimize workflows, and identify bottlenecks without disrupting actual production. This virtual testing environment accelerates innovation and reduces risk.'
+      },
+      {
+        type: 'subheading',
+        content: 'Predictive Maintenance'
+      },
+      {
+        type: 'paragraph',
+        content: 'By continuously monitoring equipment performance and comparing it with the digital twin model, manufacturers can predict when maintenance is needed and optimize maintenance schedules to minimize downtime.'
+      },
+      {
+        type: 'stats',
+        statsData: [
+          {
+            value: '20%',
+            label: 'Improvement in production efficiency',
+            icon: 'TrendingUp'
+          },
+          {
+            value: '35%',
+            label: 'Reduction in time-to-market',
+            icon: 'Clock'
+          },
+          {
+            value: '15%',
+            label: 'Decrease in operational costs',
+            icon: 'DollarSign'
+          }
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'The Future of Digital Manufacturing'
+      },
+      {
+        type: 'paragraph',
+        content: 'As digital twin technology continues to evolve, we can expect even more sophisticated simulations that incorporate AI-driven insights, advanced materials modeling, and seamless integration with AR/VR training systems.'
+      },
+      {
+        type: 'quote',
+        content: 'Digital twins represent the convergence of physical and digital manufacturing, enabling unprecedented insights and optimization opportunities.'
+      }
+    ]
+  },
+  {
+    id: '5',
+    title: 'Machine Learning in Quality Control: AI-Powered Manufacturing Excellence',
+    slug: 'machine-learning-quality-control-manufacturing',
+    excerpt: 'Discover how machine learning algorithms are revolutionizing quality control processes, enabling real-time defect detection and continuous improvement.',
+    date: 'November 30, 2024',
+    author: 'SNF Intel',
+    category: 'AI & Machine Learning',
+    imageUrl: '/lovable-uploads/526dc38a-25fa-40d4-b520-425b23ae0464.png',
+    keywords: [
+      'machine learning',
+      'quality control',
+      'AI manufacturing',
+      'defect detection',
+      'computer vision',
+      'predictive quality',
+      'automated inspection',
+      'manufacturing AI',
+      'quality assurance',
+      'intelligent manufacturing'
+    ],
+    metaDescription: 'Learn how machine learning is transforming manufacturing quality control with AI-powered defect detection and predictive quality management.',
+    content: [
+      {
+        type: 'paragraph',
+        content: 'Machine learning is transforming quality control in manufacturing by enabling real-time defect detection, predictive quality management, and continuous process improvement. AI-powered systems can identify quality issues faster and more accurately than traditional inspection methods.'
+      },
+      {
+        type: 'heading',
+        content: 'AI-Powered Visual Inspection'
+      },
+      {
+        type: 'paragraph',
+        content: 'Computer vision systems powered by machine learning can inspect products at speeds impossible for human inspectors while maintaining consistent accuracy. These systems learn from thousands of examples to identify even subtle defects.'
+      },
+      {
+        type: 'table',
+        tableData: {
+          headers: ['Traditional Inspection', 'AI-Powered Inspection', 'Improvement'],
+          rows: [
+            ['Manual visual inspection', 'Automated computer vision', '99.9% accuracy vs 80-85%'],
+            ['Batch quality testing', 'Real-time continuous inspection', '100% coverage vs sample-based'],
+            ['Subjective judgment', 'Consistent AI standards', 'Eliminates human variability'],
+            ['Post-production detection', 'In-line quality control', 'Immediate corrective action']
+          ]
+        }
+      },
+      {
+        type: 'heading',
+        content: 'Predictive Quality Management'
+      },
+      {
+        type: 'paragraph',
+        content: 'Machine learning algorithms analyze production data to predict quality issues before they occur. By identifying patterns in sensor data, process parameters, and environmental conditions, AI systems can alert operators to potential quality problems.'
+      },
+      {
+        type: 'stats',
+        statsData: [
+          {
+            value: '90%',
+            label: 'Reduction in defect escape rate',
+            icon: 'Shield'
+          },
+          {
+            value: '60%',
+            label: 'Decrease in inspection time',
+            icon: 'Clock'
+          },
+          {
+            value: '45%',
+            label: 'Reduction in quality-related costs',
+            icon: 'DollarSign'
+          }
+        ]
+      },
+      {
+        type: 'heading',
+        content: 'Continuous Learning and Improvement'
+      },
+      {
+        type: 'paragraph',
+        content: 'Machine learning systems continuously improve their performance by learning from new data. As they process more products and receive feedback on their decisions, they become more accurate and better at detecting new types of defects.'
+      },
+      {
+        type: 'subheading',
+        content: 'Implementation Best Practices'
+      },
+      {
+        type: 'icon-list',
+        items: [
+          'Start with high-volume, high-impact quality issues for maximum ROI',
+          'Ensure high-quality training data with proper defect labeling',
+          'Implement feedback loops for continuous model improvement',
+          'Integrate with existing quality management systems'
+        ]
+      },
+      {
+        type: 'quote',
+        content: 'Machine learning in quality control is not about replacing human expertise, but augmenting it with superhuman speed and consistency.'
       }
     ]
   }
