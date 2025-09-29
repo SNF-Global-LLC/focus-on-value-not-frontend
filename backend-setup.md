@@ -12,8 +12,8 @@ Set the following environment variables for your Node.js backend:
 NEW_RELIC_AI_MONITORING_ENABLED=true
 NEW_RELIC_CUSTOM_INSIGHTS_EVENTS_MAX_SAMPLES_STORED=100k
 NEW_RELIC_SPAN_EVENTS_MAX_SAMPLES_STORED=10k
-NEW_RELIC_APP_NAME=snfactor
-NEW_RELIC_LICENSE_KEY=bc470f3dd02d1de461091859bfcc566cFFFFNRAL
+NEW_RELIC_APP_NAME=noce
+NEW_RELIC_LICENSE_KEY=18095f8fa5bb503fbf20f0dc7d36c423FFFFNRAL
 ```
 
 ### Server Startup Command
@@ -21,7 +21,7 @@ NEW_RELIC_LICENSE_KEY=bc470f3dd02d1de461091859bfcc566cFFFFNRAL
 Start your Node.js server with New Relic ESM loader:
 
 ```bash
-NEW_RELIC_AI_MONITORING_ENABLED=true NEW_RELIC_CUSTOM_INSIGHTS_EVENTS_MAX_SAMPLES_STORED=100k NEW_RELIC_SPAN_EVENTS_MAX_SAMPLES_STORED=10k NEW_RELIC_APP_NAME=snfactor NEW_RELIC_LICENSE_KEY=bc470f3dd02d1de461091859bfcc566cFFFFNRAL node --experimental-loader=newrelic/esm-loader.mjs YOUR_MAIN_FILENAME.js
+NEW_RELIC_AI_MONITORING_ENABLED=true NEW_RELIC_CUSTOM_INSIGHTS_EVENTS_MAX_SAMPLES_STORED=100k NEW_RELIC_SPAN_EVENTS_MAX_SAMPLES_STORED=10k NEW_RELIC_APP_NAME=noce NEW_RELIC_LICENSE_KEY=18095f8fa5bb503fbf20f0dc7d36c423FFFFNRAL node -r newrelic server.js
 ```
 
 ### Required Import
@@ -45,7 +45,7 @@ npm install newrelic --save
 - **AI_MONITORING_ENABLED**: Enables AI/ML monitoring features
 - **CUSTOM_INSIGHTS_EVENTS_MAX_SAMPLES_STORED**: Maximum custom events stored (100k)
 - **SPAN_EVENTS_MAX_SAMPLES_STORED**: Maximum span events stored (10k)
-- **APP_NAME**: Application name in New Relic dashboard (snfactor)
+- **APP_NAME**: Application name in New Relic dashboard (noce)
 - **LICENSE_KEY**: Your New Relic license key
 
 ### Notes
