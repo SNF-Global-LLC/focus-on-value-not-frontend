@@ -562,7 +562,7 @@ export const blogPosts: BlogPost[] = [
     id: '1',
     title: 'The Rise of Sensor-Integrated Textiles: A New Era in Smart Manufacturing',
     slug: 'sensor-integrated-textiles-trend',
-    excerpt: 'Discover how sensor-integrated textiles are transforming industries from healthcare to sports, creating new possibilities for smart, responsive products.',
+    excerpt: 'Discover how sensor-integrated textiles are transforming industries from healthcare to manufacturing, creating new possibilities for smart, responsive products.',
     date: 'May 2, 2025',
     author: 'carbonfactor.io',
     category: 'Technology',
@@ -580,7 +580,7 @@ export const blogPosts: BlogPost[] = [
     content: [
       {
         type: 'paragraph',
-        content: 'Sensor-integrated textiles are rapidly emerging as a transformative technology, poised to revolutionize industries ranging from healthcare to sports. By seamlessly embedding sensors into fabrics, these innovative textiles are creating new possibilities for smart, responsive products that can monitor vital signs, track performance, and enhance safety.'
+        content: 'Sensor-integrated textiles are rapidly emerging as a transformative technology, poised to revolutionize industries ranging from healthcare to manufacturing. By seamlessly embedding sensors into fabrics, these innovative textiles are creating new possibilities for smart, responsive products that can monitor vital signs, track performance, and enhance safety.'
       },
       {
         type: 'heading',
@@ -598,7 +598,7 @@ export const blogPosts: BlogPost[] = [
         type: 'list',
         items: [
           'Healthcare: Sensor-integrated textiles can monitor vital signs such as heart rate, body temperature, and blood pressure, providing early warnings of potential health issues.',
-          'Sports: Sensor-integrated textiles can track athletic performance, measuring metrics such as speed, distance, and acceleration, helping athletes optimize their training and prevent injuries.',
+          'Manufacturing: Sensor-integrated textiles can monitor carbon emissions in real-time, tracking production metrics such as energy consumption, material usage, and waste output, helping manufacturers optimize their sustainability practices and reduce environmental impact.',
           'Safety: Sensor-integrated textiles can detect exposure to hazardous substances, such as toxic gases or radiation, providing real-time alerts to workers and supervisors.',
           'Fashion: Sensor-integrated textiles can create interactive and responsive garments that change color, shape, or function based on the wearer\'s movements or environment.'
         ]

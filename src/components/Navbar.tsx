@@ -78,9 +78,9 @@ const Navbar = () => {
                         </Link>
                       </li>
                       <li>
-                        <Link to="/projects/sport-retail" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          
-                          <p className="text-sm text-gray-500">Advanced tracking for athletes</p>
+                        <Link to="/projects/carbon-manufacturing" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+                          <div className="font-medium">Carbon Manufacturing Intelligence</div>
+                          <p className="text-sm text-gray-500">Real-time carbon tracking for production lines</p>
                         </Link>
                       </li>
                       <li>
@@ -90,9 +90,9 @@ const Navbar = () => {
                         </Link>
                       </li>
                       <li>
-                        <Link to="/projects/hockey" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Ice Hockey Elite Tracker</div>
-                          <p className="text-sm text-gray-500">Performance tracking for ice hockey</p>
+                        <Link to="/projects/supply-chain-carbon" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
+                          <div className="font-medium">Supply Chain Carbon Tracking</div>
+                          <p className="text-sm text-gray-500">End-to-end carbon footprint monitoring</p>
                         </Link>
                       </li>
                       <li>
