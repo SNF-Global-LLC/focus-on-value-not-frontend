@@ -73,7 +73,7 @@ const Navbar = () => {
                     <ul className="grid gap-3 p-4 w-[400px]">
                       <li>
                         <Link to="/projects/firecat" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">FireCat 6th SENSE</div>
+                          <div className="font-medium">Net Zero</div>
                           <p className="text-sm text-gray-500">Smart textiles for firefighter safety</p>
                         </Link>
                       </li>
