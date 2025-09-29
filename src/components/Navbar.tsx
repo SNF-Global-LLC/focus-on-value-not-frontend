@@ -65,39 +65,7 @@ const Navbar = () => {
                   </Link>
                 </NavigationMenuItem>
                 
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger className={cn(isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
-                    Customer Cases
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className="grid gap-3 p-4 w-[400px]">
-                      <li>
-                        <Link to="/projects/firecat" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Net Zero</div>
-                          <p className="text-sm text-gray-500">Smart textiles for firefighter safety</p>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/projects/carbon-manufacturing" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Carbon Manufacturing Intelligence</div>
-                          <p className="text-sm text-gray-500">Real-time carbon tracking for production lines</p>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/projects/workwear" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Workwear Climate Control</div>
-                          <p className="text-sm text-gray-500">Temperature regulation for extreme environments</p>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/projects/supply-chain-carbon" className="block p-3 space-y-1 rounded-md hover:bg-gray-100">
-                          <div className="font-medium">Supply Chain Carbon Tracking</div>
-                          <p className="text-sm text-gray-500">End-to-end carbon footprint monitoring</p>
-                        </Link>
-                      </li>
-                    </ul>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
+        
                 
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className={cn(isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
@@ -149,13 +117,7 @@ const Navbar = () => {
                    </Link>
                  </NavigationMenuItem>
                 
-                <NavigationMenuItem>
-                  <Link to="/careers">
-                    <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-gray-700 hover:text-gray-900" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
-                      Careers
-                    </NavigationMenuLink>
-                  </Link>
-                </NavigationMenuItem>
+              
                 
                 <NavigationMenuItem>
                   <button onClick={() => scrollToSection('contact')} className={cn("px-4 py-2 rounded-md transition-colors", isScrolled ? "bg-gray-200 text-gray-700 hover:bg-gray-300" : "bg-gray-700 text-white hover:bg-gray-600")}>
