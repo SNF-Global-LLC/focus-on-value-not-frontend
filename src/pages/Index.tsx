@@ -24,7 +24,6 @@ const Index = () => {
       <SEO 
         title="carbonfactor.io - Carbon Tracking Platform" 
         description="carbonfactor.io: Revolutionizing carbon footprint management with real-time tracking, analytics, and actionable sustainability insights for businesses worldwide."
-        imageUrl="/lovable-uploads/526dc38a-25fa-40d4-b520-425b23ae0464.png"
         keywords={['carbon tracking', 'sustainability solutions', 'environmental monitoring', 'carbon footprint', 'ESG reporting', 'carbon management', 'sustainability analytics']}
       />
       <Hero />
