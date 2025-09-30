@@ -46,11 +46,17 @@ const AnimatedCounter = ({
   }, [isInView, end, duration]);
 
   return (
-    <span ref={ref} className="tabular-nums">
+    <motion.span 
+      ref={ref} 
+      className="tabular-nums inline-block"
+      initial={{ scale: 0.5, opacity: 0 }}
+      animate={isInView ? { scale: 1, opacity: 1 } : {}}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+    >
       {prefix}
       {count.toFixed(decimals)}
       {suffix}
-    </span>
+    </motion.span>
   );
 };
 

@@ -36,11 +36,12 @@ const FloatingContactButton = () => {
   return (
     <Button
       onClick={scrollToContact}
-      className="fixed bottom-6 right-6 z-50 bg-gray-800 hover:bg-gray-700 text-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all"
+      variant="premium"
+      className="fixed bottom-6 right-6 z-50 rounded-full p-4 shadow-2xl hover:shadow-accent/20 group"
       size="icon"
       aria-label="Contact Us"
     >
-      <MessageSquare className="h-6 w-6" />
+      <MessageSquare className="h-6 w-6 group-hover:scale-110 transition-transform duration-300" />
     </Button>
   );
 };
