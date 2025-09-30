@@ -30,7 +30,7 @@ const Navbar = () => {
     }
     setIsMenuOpen(false);
   };
-  return <motion.nav className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full", isScrolled ? "bg-white shadow-sm" : "bg-black")} initial={{
+  return <motion.nav className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-500 w-full backdrop-blur-sm", isScrolled ? "bg-white/95 shadow-md" : "bg-black/80")} initial={{
     opacity: 1,
     y: 0
   }} animate={{
@@ -120,7 +120,7 @@ const Navbar = () => {
               
                 
                 <NavigationMenuItem>
-                  <button onClick={() => scrollToSection('contact')} className={cn("px-4 py-2 rounded-md transition-colors", isScrolled ? "bg-gray-200 text-gray-700 hover:bg-gray-300" : "bg-gray-700 text-white hover:bg-gray-600")}>
+                  <button onClick={() => scrollToSection('contact')} className={cn("px-4 py-2 rounded-xl transition-all duration-300 hover:-translate-y-0.5", isScrolled ? "bg-gray-200 text-gray-700 hover:bg-gray-300 hover:shadow-md" : "bg-gray-700 text-white hover:bg-gray-600 hover:shadow-lg")}>
                     Contact Us
                   </button>
                 </NavigationMenuItem>
