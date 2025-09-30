@@ -1,12 +1,22 @@
 import { ArrowRight, Code, Cpu, Layers, MessageSquare, BarChart3 } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { useRef } from "react";
 
 
 const Hero = () => {
   const isMobile = useIsMobile();
+  const ref = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"]
+  });
+  
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
+  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
+  
   const containerVariants = {
     hidden: {
       opacity: 0
@@ -44,9 +54,9 @@ const Hero = () => {
     }
   };
   
-  return <motion.div className="relative w-full" initial="hidden" animate="visible" variants={containerVariants}>
+  return <motion.div ref={ref} className="relative w-full" initial="hidden" animate="visible" variants={containerVariants}>
       <div className="banner-container bg-black relative overflow-hidden h-[50vh] sm:h-[60vh] md:h-[500px] lg:h-[550px] xl:h-[600px] w-full">
-        <div className="absolute inset-0 bg-black w-full">
+        <motion.div style={{ y }} className="absolute inset-0 w-full h-full bg-black">
           <video 
             autoPlay 
             loop 
@@ -65,9 +75,9 @@ const Hero = () => {
             />
           </video>
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-white"></div>
-        </div>
+        </motion.div>
         
-        <div className="banner-overlay bg-transparent pt-20 sm:pt-24 md:pt-32 w-full">
+        <motion.div style={{ opacity }} className="banner-overlay bg-transparent pt-20 sm:pt-24 md:pt-32 w-full">
           <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center h-full">
             <motion.div className="w-full max-w-4xl text-center" variants={itemVariants}>
               <motion.h1 className="banner-title text-white" variants={itemVariants}>Carbon Tracking Platform</motion.h1>
@@ -107,32 +117,47 @@ const Hero = () => {
               </motion.div>
             </motion.div>
           </div>
-        </div>
+        </motion.div>
       </div>
       
       <div className="relative z-10 w-full px-4 sm:px-6 lg:px-8 mx-auto">
         <motion.div className="mt-6 md:mt-8 grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4" variants={containerVariants} initial="hidden" animate="visible" transition={{
         delay: 0.6
       }}>
-          <motion.div className="bg-white p-4 md:p-5 rounded-2xl shadow-lg border border-gray-100/50 backdrop-blur-sm transform transition-all duration-500 hover:-translate-y-2 hover:shadow-xl" variants={itemVariants}>
-            <div className="w-10 h-10 md:w-12 md:h-12 bg-success/10 flex items-center justify-center rounded-xl text-success mb-2 md:mb-3 transition-transform duration-300 group-hover:scale-110">
-              <Cpu className="w-5 h-5 md:w-6 md:h-6" />
+          <motion.div 
+            className="bg-white p-4 md:p-5 rounded-2xl shadow-lg border border-gray-100/50 backdrop-blur-sm transform transition-all duration-500 hover:-translate-y-2 hover:shadow-xl group cursor-pointer" 
+            variants={itemVariants}
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+          >
+            <div className="w-10 h-10 md:w-12 md:h-12 bg-success/10 flex items-center justify-center rounded-xl text-success mb-2 md:mb-3 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6">
+              <Cpu className="w-5 h-5 md:w-6 md:h-6 transition-transform duration-300" />
             </div>
             <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-primary">Carbon Monitoring</h3>
             <p className="text-gray-600 text-xs md:text-sm leading-relaxed">Advanced tracking systems providing instant visibility into your carbon footprint across operations.</p>
           </motion.div>
           
-          <motion.div className="bg-white p-4 md:p-5 rounded-2xl shadow-lg border border-gray-100/50 backdrop-blur-sm transform transition-all duration-500 hover:-translate-y-2 hover:shadow-xl" variants={itemVariants}>
-            <div className="w-10 h-10 md:w-12 md:h-12 bg-accent/10 flex items-center justify-center rounded-xl text-accent mb-2 md:mb-3 transition-transform duration-300 group-hover:scale-110">
-              <Code className="w-5 h-5 md:w-6 md:h-6" />
+          <motion.div 
+            className="bg-white p-4 md:p-5 rounded-2xl shadow-lg border border-gray-100/50 backdrop-blur-sm transform transition-all duration-500 hover:-translate-y-2 hover:shadow-xl group cursor-pointer" 
+            variants={itemVariants}
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+          >
+            <div className="w-10 h-10 md:w-12 md:h-12 bg-accent/10 flex items-center justify-center rounded-xl text-accent mb-2 md:mb-3 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6">
+              <Code className="w-5 h-5 md:w-6 md:h-6 transition-transform duration-300" />
             </div>
             <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-primary">Sustainability Analytics</h3>
             <p className="text-gray-600 text-xs md:text-sm leading-relaxed">AI-powered insights that predict emissions trends, optimize processes, and reduce environmental impact.</p>
           </motion.div>
           
-          <motion.div className="bg-white p-4 md:p-5 rounded-2xl shadow-lg border border-gray-100/50 backdrop-blur-sm transform transition-all duration-500 hover:-translate-y-2 hover:shadow-xl" variants={itemVariants}>
-            <div className="w-10 h-10 md:w-12 md:h-12 bg-primary/10 flex items-center justify-center rounded-xl text-primary mb-2 md:mb-3 transition-transform duration-300 group-hover:scale-110">
-              <Layers className="w-5 h-5 md:w-6 md:h-6" />
+          <motion.div 
+            className="bg-white p-4 md:p-5 rounded-2xl shadow-lg border border-gray-100/50 backdrop-blur-sm transform transition-all duration-500 hover:-translate-y-2 hover:shadow-xl group cursor-pointer" 
+            variants={itemVariants}
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+          >
+            <div className="w-10 h-10 md:w-12 md:h-12 bg-primary/10 flex items-center justify-center rounded-xl text-primary mb-2 md:mb-3 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6">
+              <Layers className="w-5 h-5 md:w-6 md:h-6 transition-transform duration-300" />
             </div>
             <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-primary">Comprehensive Reporting</h3>
             <p className="text-gray-600 text-xs md:text-sm leading-relaxed">Seamless integration with ESG reporting frameworks and sustainability management systems.</p>

@@ -2,6 +2,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { Check } from "lucide-react";
+import { motion, useInView } from 'framer-motion';
 
 const processes = [{
   id: 1,
@@ -92,8 +93,18 @@ const Process = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
+
   return (
-    <section id="process" className="bg-white py-16">
+    <motion.section 
+      ref={sectionRef}
+      id="process" 
+      className="bg-white py-16"
+      initial={{ opacity: 0 }}
+      animate={isInView ? { opacity: 1 } : { opacity: 0 }}
+      transition={{ duration: 0.6 }}
+    >
       <div className="container mx-auto px-4" ref={processRef}>
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">Our Implementation Process</h2>
@@ -105,9 +116,14 @@ const Process = () => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
           {/* Process Navigation */}
           <div className="md:col-span-4 lg:col-span-3">
-            <div className="sticky top-24 space-y-2">
-              {processes.map((process) => (
-                <button
+            <motion.div 
+              className="sticky top-24 space-y-2"
+              initial={{ opacity: 0, x: -20 }}
+              animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              {processes.map((process, index) => (
+                <motion.button
                   key={process.id}
                   onClick={() => {
                     setActiveProcess(process.id);
@@ -115,69 +131,106 @@ const Process = () => {
                     el?.scrollIntoView({ behavior: 'smooth', block: 'center' });
                   }}
                   className={cn(
-                    "w-full text-left p-4 rounded-lg transition-all",
+                    "w-full text-left p-4 rounded-xl transition-all duration-300 relative overflow-hidden group",
                     activeProcess === process.id
-                      ? "bg-gray-100 shadow-sm"
+                      ? "bg-gradient-to-r from-gray-100 to-gray-50 shadow-md"
                       : "hover:bg-gray-50"
                   )}
+                  whileHover={{ scale: 1.02, x: 4 }}
+                  whileTap={{ scale: 0.98 }}
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
+                  transition={{ duration: 0.4, delay: 0.3 + index * 0.1 }}
                 >
-                  <div className="flex items-center">
-                    <div className={cn(
-                      "w-8 h-8 rounded-full flex items-center justify-center mr-3 transition-all",
-                      activeProcess === process.id
-                        ? "bg-blue-100 text-blue-700"
-                        : "bg-gray-100 text-gray-500"
-                    )}>
+                  {/* Hover gradient effect */}
+                  <div className={cn(
+                    "absolute inset-0 bg-gradient-to-r from-accent/5 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300",
+                    activeProcess === process.id && "opacity-100"
+                  )}></div>
+                  
+                  <div className="flex items-center relative z-10">
+                    <motion.div 
+                      className={cn(
+                        "w-8 h-8 rounded-full flex items-center justify-center mr-3 transition-all duration-300",
+                        activeProcess === process.id
+                          ? "bg-gradient-to-br from-accent to-primary text-white shadow-lg"
+                          : "bg-gray-100 text-gray-500"
+                      )}
+                      animate={activeProcess === process.id ? { scale: [1, 1.1, 1] } : {}}
+                      transition={{ duration: 0.3 }}
+                    >
                       {activeProcess > process.id ? (
                         <Check className="h-5 w-5" />
                       ) : (
-                        <span>{process.id}</span>
+                        <span className="font-semibold">{process.id}</span>
                       )}
-                    </div>
+                    </motion.div>
                     <span className={cn(
-                      "font-medium",
+                      "font-medium transition-colors duration-300",
                       activeProcess === process.id ? "text-gray-900" : "text-gray-600"
                     )}>
                       {process.title}
                     </span>
                   </div>
-                </button>
+                  
+                  {/* Active indicator line */}
+                  {activeProcess === process.id && (
+                    <motion.div
+                      className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-accent to-primary rounded-r"
+                      layoutId="activeIndicator"
+                    />
+                  )}
+                </motion.button>
               ))}
-            </div>
+            </motion.div>
           </div>
           
           {/* Process Details */}
           <div className="md:col-span-8 lg:col-span-9">
             <div className="space-y-16">
-              {processes.map((process) => (
-                <div
+              {processes.map((process, processIndex) => (
+                <motion.div
                   id={`process-${process.id}`}
                   key={process.id}
                   className="scroll-mt-24 transition-all duration-500"
                   ref={el => processSectionsRef.current[process.id - 1] = el}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                  transition={{ duration: 0.5, delay: 0.4 + processIndex * 0.1 }}
                 >
-                  <h3 className="text-2xl font-bold mb-4">{process.title}</h3>
+                  <motion.h3 
+                    className="text-2xl font-bold mb-4"
+                    animate={activeProcess === process.id ? { scale: [1, 1.02, 1] } : {}}
+                    transition={{ duration: 0.3 }}
+                  >
+                    {process.title}
+                  </motion.h3>
                   <p className="text-gray-700 mb-6">{process.description}</p>
                   
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {process.steps.map((step, idx) => (
-                      <div key={idx} className="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                      <motion.div 
+                        key={idx} 
+                        className="bg-gradient-to-br from-white to-gray-50 p-4 rounded-xl border border-gray-100 hover:shadow-md transition-all duration-300 group cursor-pointer"
+                        whileHover={{ y: -4, scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
+                      >
                         <div className="flex items-center">
-                          <div className="w-6 h-6 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center mr-3 text-sm">
+                          <div className="w-6 h-6 rounded-full bg-gradient-to-br from-accent/20 to-primary/20 text-primary flex items-center justify-center mr-3 text-sm font-semibold group-hover:scale-110 transition-transform duration-300">
                             {idx + 1}
                           </div>
-                          <span>{step}</span>
+                          <span className="text-gray-800">{step}</span>
                         </div>
-                      </div>
+                      </motion.div>
                     ))}
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

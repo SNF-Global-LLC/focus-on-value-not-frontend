@@ -1,9 +1,10 @@
 
-import { useState, useRef, useEffect, TouchEvent } from "react";
+import { useState, useRef, useEffect, TouchEvent, MouseEvent } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useIsMobile } from "@/hooks/use-mobile";
+import { motion } from "framer-motion";
 
 const projects = [
   {
@@ -80,6 +81,8 @@ const Projects = () => {
   const [isHovering, setIsHovering] = useState(false);
   const [touchStart, setTouchStart] = useState<number | null>(null);
   const [touchEnd, setTouchEnd] = useState<number | null>(null);
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [hoveredCard, setHoveredCard] = useState<number | null>(null);
   const isMobile = useIsMobile();
 
   const minSwipeDistance = 50;
@@ -140,6 +143,21 @@ const Projects = () => {
     if (index === (activeProject - 1 + projects.length) % projects.length) return "translate-x-[-40%] scale-95 opacity-60 z-10";
     return "scale-90 opacity-0";
   };
+
+  const handleMouseMove = (e: MouseEvent<HTMLDivElement>, index: number) => {
+    if (index !== activeProject) return;
+    
+    const card = e.currentTarget.getBoundingClientRect();
+    setMousePosition({
+      x: ((e.clientX - card.left) / card.width - 0.5) * 20,
+      y: ((e.clientY - card.top) / card.height - 0.5) * 20,
+    });
+  };
+
+  const handleMouseLeave = () => {
+    setMousePosition({ x: 0, y: 0 });
+    setHoveredCard(null);
+  };
   
   return <section id="projects" ref={projectsRef} className="bg-white py-[50px] w-full">
       <div className="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
@@ -175,27 +193,41 @@ const Projects = () => {
         >
           <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
             {projects.map((project, index) => (
-              <div 
+              <motion.div 
                 key={project.id} 
                 className={`absolute top-0 w-full max-w-md transform transition-all duration-500 ${getCardAnimationClass(index)}`} 
-                style={{ transitionDelay: `${index * 50}ms` }}
+                style={{ 
+                  transitionDelay: `${index * 50}ms`,
+                  ...(index === activeProject && hoveredCard === index ? {
+                    transform: `perspective(1000px) rotateY(${mousePosition.x * 0.5}deg) rotateX(${-mousePosition.y * 0.5}deg) scale(1.02)`
+                  } : {})
+                }}
+                onMouseMove={(e) => handleMouseMove(e, index)}
+                onMouseEnter={() => setHoveredCard(index)}
+                onMouseLeave={handleMouseLeave}
               >
-                <Card className="overflow-hidden h-[500px] border border-gray-100 shadow-sm hover:shadow-md flex flex-col">
-                  <div 
+                <Card className="overflow-hidden h-[500px] border border-gray-100 shadow-lg hover:shadow-2xl flex flex-col transition-all duration-300" style={{
+                  boxShadow: index === activeProject && hoveredCard === index 
+                    ? `${mousePosition.x}px ${mousePosition.y}px 30px rgba(0, 0, 0, 0.2)` 
+                    : undefined
+                }}>
+                  <motion.div
                     className="relative bg-black p-6 flex items-center justify-center h-48 overflow-hidden"
                     style={{
                       backgroundImage: `url(${project.imageUrl})`,
                       backgroundSize: 'cover',
                       backgroundPosition: 'center'
                     }}
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ duration: 0.3 }}
                   >
-                    <div className="absolute inset-0 bg-black/50"></div>
+                    <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/70"></div>
                     <div className="relative z-10 flex flex-col items-center justify-center">
                       <h3 className="text-2xl font-bold text-white mb-2">{project.brand.toUpperCase()}</h3>
                       <div className="w-12 h-1 bg-white mb-2"></div>
                       <p className="text-white/90 text-sm">{project.title}</p>
                     </div>
-                  </div>
+                  </motion.div>
                   
                   <CardContent className="p-6 flex flex-col flex-grow">
                     <div className="mb-4">
@@ -210,13 +242,14 @@ const Projects = () => {
                     <div className="mt-auto">
                       <div className="flex flex-wrap gap-2 mb-4">
                         {project.tags.map((tag, idx) => (
-                          <span 
+                          <motion.span 
                             key={idx} 
-                            className="px-2 py-1 bg-gray-50 text-gray-600 rounded-full text-xs animate-pulse-slow" 
+                            className="px-2 py-1 bg-gray-50 text-gray-600 rounded-full text-xs hover:bg-gray-100 transition-colors duration-200 cursor-default" 
                             style={{ animationDelay: `${idx * 300}ms` }}
+                            whileHover={{ scale: 1.05, backgroundColor: 'rgb(243 244 246)' }}
                           >
                             {tag}
-                          </span>
+                          </motion.span>
                         ))}
                       </div>
                       
@@ -236,7 +269,7 @@ const Projects = () => {
                     </div>
                   </CardContent>
                 </Card>
-              </div>
+              </motion.div>
             ))}
           </div>
           
