@@ -70,11 +70,6 @@ const Footer = () => {
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 pb-10 border-b border-gray-700">
           <div className="lg:col-span-2">
-            <img 
-              src="/lovable-uploads/7d120ee6-3614-4b75-9c35-716d54490d67.png" 
-              alt="carbonfactor.io Logo" 
-              className="h-10 w-auto mb-6 invert" // Added invert to make logo white
-            />
             <p className="text-gray-300 mb-6">
               carbonfactor.io provides comprehensive carbon tracking and sustainability solutions, helping businesses understand and reduce their environmental impact with real-time monitoring and actionable insights.
             </p>
