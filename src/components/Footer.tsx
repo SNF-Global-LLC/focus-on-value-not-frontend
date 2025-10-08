@@ -1,18 +1,16 @@
-
 import { ArrowRight, Linkedin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import emailjs from 'emailjs-com';
-
 const Footer = () => {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const { toast } = useToast();
-
+  const {
+    toast
+  } = useToast();
   const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();
-    
     if (!email) {
       toast({
         title: "Error",
@@ -21,15 +19,12 @@ const Footer = () => {
       });
       return;
     }
-    
     setIsSubmitting(true);
-    
     try {
       // EmailJS configuration
       const EMAILJS_SERVICE_ID = "service_i3h66xg";
       const EMAILJS_TEMPLATE_ID = "template_fgq53nh";
       const EMAILJS_PUBLIC_KEY = "wQmcZvoOqTAhGnRZ3";
-      
       const templateParams = {
         from_name: "Website Subscriber",
         from_email: email,
@@ -37,24 +32,15 @@ const Footer = () => {
         to_name: 'carbonfactor.io Team',
         reply_to: email
       };
-      
-      await emailjs.send(
-        EMAILJS_SERVICE_ID,
-        EMAILJS_TEMPLATE_ID,
-        templateParams,
-        EMAILJS_PUBLIC_KEY
-      );
-      
+      await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams, EMAILJS_PUBLIC_KEY);
       toast({
         title: "Success!",
         description: "Thank you for subscribing to our newsletter.",
         variant: "default"
       });
-      
       setEmail("");
     } catch (error) {
       console.error("Error sending subscription:", error);
-      
       toast({
         title: "Error",
         description: "There was a problem subscribing. Please try again later.",
@@ -64,18 +50,14 @@ const Footer = () => {
       setIsSubmitting(false);
     }
   };
-
-  return (
-    <footer id="contact" className="bg-black text-white pt-16 pb-8 w-full">
+  return <footer id="contact" className="bg-black text-white pt-16 pb-8 w-full">
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 pb-10 border-b border-gray-700">
           <div className="lg:col-span-2">
             <p className="text-gray-300 mb-6">
               carbonfactor.io provides comprehensive carbon tracking and sustainability solutions, helping businesses understand and reduce their environmental impact with real-time monitoring and actionable insights.
             </p>
-            <p className="text-gray-300 mb-6">
-              Stockholm, Sweden
-            </p>
+            <p className="text-gray-300 mb-6">santa barbara, </p>
           </div>
           
           <div>
@@ -91,26 +73,13 @@ const Footer = () => {
             <h3 className="text-lg font-bold mb-4 text-white">Get in Touch</h3>
             <form className="space-y-4" onSubmit={handleSubscribe}>
               <div>
-                <input 
-                  type="email" 
-                  placeholder="Your email" 
-                  className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600 text-white placeholder-gray-400"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  disabled={isSubmitting}
-                />
+                <input type="email" placeholder="Your email" className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600 text-white placeholder-gray-400" value={email} onChange={e => setEmail(e.target.value)} disabled={isSubmitting} />
               </div>
-              <button 
-                type="submit" 
-                className="w-full px-4 py-2 bg-gray-700 text-white rounded-md hover:bg-gray-600 transition-colors flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
-                disabled={isSubmitting}
-              >
-                {isSubmitting ? "Subscribing..." : (
-                  <>
+              <button type="submit" className="w-full px-4 py-2 bg-gray-700 text-white rounded-md hover:bg-gray-600 transition-colors flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed" disabled={isSubmitting}>
+                {isSubmitting ? "Subscribing..." : <>
                     Subscribe
                     <ArrowRight className="ml-2 w-4 h-4" />
-                  </>
-                )}
+                  </>}
               </button>
             </form>
           </div>
@@ -125,8 +94,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
